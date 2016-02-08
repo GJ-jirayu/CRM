@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-sequence> 
+  <title><![CDATA[report_42.prpt]]></title>  
+  <version>1</version>  
+  <logging-level>ERROR</logging-level>  
+  <documentation> 
+    <author>lsb</author>  
+    <help/>  
+    <result-type>report</result-type>  
+    <description>1355885445728.analysisview.xaction</description>  
+    <icon/>  
+    <!-- need an icon --> 
+  </documentation>  
+  <inputs> 
+    <mode type="string"> 
+      <default-value/>  
+      <sources> 
+        <request>mode</request> 
+      </sources> 
+    </mode> 
+  </inputs>  
+  <outputs> 
+    <model type="string"/>  
+    <connection type="string"/>  
+    <mdx type="string"/>  
+    <options type="list"/>  
+    <title type="string"/>  
+    <url type="string"> 
+      <destinations> 
+        <response>redirect</response> 
+      </destinations> 
+    </url> 
+  <chartbackgroundg type="string"/><chartvertaxislabel type="string"/><chartslicerfontsize type="string"/><chartaxislabelfontfamily type="string"/><charttitlefontfamily type="string"/><chartshowslicer type="string"/><query type="string"/><charttype type="string"/><chartbackgroundb type="string"/><actionreference type="string"/><showgrid type="string"/><chartslicerlocation type="string"/><chartaxistickfontstyle type="string"/><chartlocation type="string"/><role type="string"/><chartheight type="string"/><chartlegendfontsize type="string"/><chartwidth type="string"/><chartslicerfontfamily type="string"/><chartlegendlocation type="string"/><chartaxistickfontsize type="string"/><charttitlefontsize type="string"/><chartlegendfontstyle type="string"/><chartshowlegend type="string"/><chartaxislabelfontsize type="string"/><charttitlefontstyle type="string"/><chartaxistickfontfamily type="string"/><chartaxisticklabelrotation type="string"/><chartaxislabelfontstyle type="string"/><chartlegendfontfamily type="string"/><chartdrillthroughenabled type="string"/><charthorizaxislabel type="string"/><charttitle type="string"/><chartsliceralignment type="string"/><chartslicerfontstyle type="string"/><chartbackgroundr type="string"/></outputs>  
+  <resources/>  
+  <actions> 
+    <action-definition> 
+      <component-name>PivotViewComponent</component-name>  
+      <action-type>Pivot View</action-type>  
+      <action-inputs> 
+        <mode type="string"/> 
+      </action-inputs>  
+      <action-outputs> 
+        <model type="string"/>  
+        <connection type="string"/>  
+        <mdx type="string"/>  
+        <options type="list"/>  
+        <title type="string"/>  
+        <url type="string"/> 
+      <chartbackgroundg type="string"/><chartvertaxislabel type="string"/><chartslicerfontsize type="string"/><chartaxislabelfontfamily type="string"/><charttitlefontfamily type="string"/><chartshowslicer type="string"/><query type="string"/><charttype type="string"/><chartbackgroundb type="string"/><actionreference type="string"/><showgrid type="string"/><chartslicerlocation type="string"/><chartaxistickfontstyle type="string"/><chartlocation type="string"/><role type="string"/><chartheight type="string"/><chartlegendfontsize type="string"/><chartwidth type="string"/><chartslicerfontfamily type="string"/><chartlegendlocation type="string"/><chartaxistickfontsize type="string"/><charttitlefontsize type="string"/><chartlegendfontstyle type="string"/><chartshowlegend type="string"/><chartaxislabelfontsize type="string"/><charttitlefontstyle type="string"/><chartaxistickfontfamily type="string"/><chartaxisticklabelrotation type="string"/><chartaxislabelfontstyle type="string"/><chartlegendfontfamily type="string"/><chartdrillthroughenabled type="string"/><charthorizaxislabel type="string"/><charttitle type="string"/><chartsliceralignment type="string"/><chartslicerfontstyle type="string"/><chartbackgroundr type="string"/></action-outputs>  
+      <component-definition> 
+        <title><![CDATA[report_42.prpt]]></title>  
+        <viewer>Pivot</viewer>  
+        <model><![CDATA[solution:/CRM/crm_analysis/CRM_Analysis.xml]]></model>  
+        <options> 
+          <personal/>  
+          <cube-nav/>  
+          <mdx-edit/>  
+          <sort-conf/>  
+          <spacer/>  
+          <level-style/>  
+          <hide-spans/>  
+          <properties/>  
+          <non-empty/>  
+          <swap-axes/>  
+          <spacer/>  
+          <drill-member/>  
+          <drill-position/>  
+          <drill-replace/>  
+          <drill-thru/>  
+          <spacer/>  
+          <chart/>  
+          <chart-conf/>  
+          <spacer/>  
+          <print-conf/>  
+          <print-pdf/>  
+          <spacer/>  
+          <excel/> 
+        </options>  
+        <query><![CDATA[select NON EMPTY {[Measures].[No of New Member], [Measures].[No of New Member YTD], [Measures].[No of New Member AVG YTD], [Measures].[No of All Member], [Measures].[No of All Member AVG YTD], [Measures].[No of All Expired Member], [Measures].[No of All Expired Member AVG YTD], [Measures].[No of All Not Expired Member], [Measures].[No of All Not Expired Member AVG YTD], [Measures].[% Growth No of All Member Per Month], [Measures].[% Growth No of All Member AVG YTD Per Month], [Measures].[No of All Not Expired Member VS No of All Member], [Measures].[No of All Not Expired Member AVG YTD VS No of All Member], [Measures].[No of New Member % DIFF Previous Year], [Measures].[No of New Member AVG YTD % DIFF Previous Year], [Measures].[No of All Member % DIFF Previous Year], [Measures].[No of All Member AVG YTD % DIFF Previous Year], [Measures].[No of All Expired Member % DIFF Previous Year], [Measures].[No of All Expired Member AVG YTD % DIFF Previous Year], [Measures].[No of All Not Expired Member % DIFF Previous Year], [Measures].[No of All Not Expired Member AVG YTD % DIFF Previous Year], [Measures].[No of All Renew AVG YTD % DIFF Previous Year]} ON COLUMNS,
+  NON EMPTY Crossjoin({[Date].[2007], [Date].[2007].[2007 Oct], [Date].[2007].[2007 Nov], [Date].[2007].[2007 Dec], [Date].[2008], [Date].[2008].[2008 Jan], [Date].[2008].[2008 Feb], [Date].[2008].[2008 Mar], [Date].[2008].[2008 Apr], [Date].[2008].[2008 May], [Date].[2008].[2008 Jun], [Date].[2008].[2008 Jul], [Date].[2008].[2008 Aug], [Date].[2008].[2008 Sep], [Date].[2008].[2008 Oct], [Date].[2008].[2008 Nov], [Date].[2008].[2008 Dec], [Date].[2009], [Date].[2009].[2009 Jan], [Date].[2009].[2009 Feb], [Date].[2009].[2009 Mar], [Date].[2009].[2009 Apr], [Date].[2009].[2009 May], [Date].[2009].[2009 Jun], [Date].[2009].[2009 Jul], [Date].[2009].[2009 Aug], [Date].[2009].[2009 Sep], [Date].[2009].[2009 Oct], [Date].[2009].[2009 Nov], [Date].[2009].[2009 Dec], [Date].[2010], [Date].[2010].[2010 Jan], [Date].[2010].[2010 Feb], [Date].[2010].[2010 Mar], [Date].[2010].[2010 Apr], [Date].[2010].[2010 May], [Date].[2010].[2010 Jun], [Date].[2010].[2010 Jul], [Date].[2010].[2010 Aug], [Date].[2010].[2010 Sep], [Date].[2010].[2010 Oct], [Date].[2010].[2010 Nov], [Date].[2010].[2010 Dec], [Date].[2011], [Date].[2011].[2011 Jan], [Date].[2011].[2011 Feb], [Date].[2011].[2011 Mar], [Date].[2011].[2011 Apr], [Date].[2011].[2011 May], [Date].[2011].[2011 Jun], [Date].[2011].[2011 Jul], [Date].[2011].[2011 Aug], [Date].[2011].[2011 Sep], [Date].[2011].[2011 Oct], [Date].[2011].[2011 Nov], [Date].[2011].[2011 Dec], [Date].[2012], [Date].[2012].[2012 Jan], [Date].[2012].[2012 Feb], [Date].[2012].[2012 Mar], [Date].[2012].[2012 Apr], [Date].[2012].[2012 May], [Date].[2012].[2012 Jun], [Date].[2012].[2012 Jul], [Date].[2012].[2012 Aug], [Date].[2012].[2012 Sep], [Date].[2012].[2012 Oct], [Date].[2012].[2012 Nov], [Date].[2012].[2012 Dec], [Date].[2013], [Date].[2013].[2013 Jan], [Date].[2013].[2013 Feb], [Date].[2013].[2013 Mar], [Date].[2013].[2013 Apr], [Date].[2013].[2013 May], [Date].[2013].[2013 Jun], [Date].[2013].[2013 Jul]}, {[Member Type Name].[All Member Type Names]}) ON ROWS
+from [Member Monthly]
+]]></query>  
+        <jndi><![CDATA[SNP-DWH]]></jndi>  
+        <cube>Member Monthly</cube>
+      <chartbackgroundg><![CDATA[255]]></chartbackgroundg><chartvertaxislabel><![CDATA[]]></chartvertaxislabel><chartslicerfontsize><![CDATA[12]]></chartslicerfontsize><chartaxislabelfontfamily><![CDATA[SansSerif]]></chartaxislabelfontfamily><charttitlefontfamily><![CDATA[SansSerif]]></charttitlefontfamily><chartshowslicer><![CDATA[true]]></chartshowslicer><charttype><![CDATA[1]]></charttype><chartbackgroundb><![CDATA[255]]></chartbackgroundb><actionreference><![CDATA[CRM/crm_analysis/01.Summary_MemberMonthly_[3].analysisview.xaction]]></actionreference><showgrid><![CDATA[true]]></showgrid><chartslicerlocation><![CDATA[1]]></chartslicerlocation><chartaxistickfontstyle><![CDATA[0]]></chartaxistickfontstyle><chartlocation><![CDATA[none]]></chartlocation><role/><chartheight><![CDATA[300]]></chartheight><chartlegendfontsize><![CDATA[10]]></chartlegendfontsize><chartwidth><![CDATA[500]]></chartwidth><chartslicerfontfamily><![CDATA[SansSerif]]></chartslicerfontfamily><chartlegendlocation><![CDATA[3]]></chartlegendlocation><chartaxistickfontsize><![CDATA[12]]></chartaxistickfontsize><charttitlefontsize><![CDATA[18]]></charttitlefontsize><connection/><chartlegendfontstyle><![CDATA[0]]></chartlegendfontstyle><chartshowlegend><![CDATA[true]]></chartshowlegend><chartaxislabelfontsize><![CDATA[12]]></chartaxislabelfontsize><charttitlefontstyle><![CDATA[1]]></charttitlefontstyle><chartaxistickfontfamily><![CDATA[SansSerif]]></chartaxistickfontfamily><chartaxisticklabelrotation><![CDATA[30]]></chartaxisticklabelrotation><chartaxislabelfontstyle><![CDATA[0]]></chartaxislabelfontstyle><chartlegendfontfamily><![CDATA[SansSerif]]></chartlegendfontfamily><chartdrillthroughenabled><![CDATA[false]]></chartdrillthroughenabled><charthorizaxislabel><![CDATA[]]></charthorizaxislabel><charttitle><![CDATA[]]></charttitle><chartsliceralignment><![CDATA[3]]></chartsliceralignment><chartslicerfontstyle><![CDATA[0]]></chartslicerfontstyle><chartbackgroundr><![CDATA[255]]></chartbackgroundr></component-definition>  
+      <action-name>Pivot View</action-name>  
+      <logging-level>DEBUG</logging-level> 
+    </action-definition> 
+  </actions> 
+</action-sequence>
