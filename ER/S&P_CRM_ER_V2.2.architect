@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.7">
+ <project-name>S&amp;P_CRM_ER_V2.2</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+  <data-source id="DS2">
+   <property key="Connection Type" value="MySQL" />
+   <property key="Logical" value="10.14.199.199" />
+   <property key="JDBC URL" value="jdbc:mysql://10.14.199.199:3306/SNP-ODS" />
+   <property key="UID" value="root" />
+   <property key="PWD" value="snp1344food" />
+   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+  <database id="DB0" populated="true" UUID="45f82294-70f9-4f28-8411-4e304145f860" dbcs-ref="DS2" name="10.14.199.199" physicalName="10.14.199.199" >
+   <catalog id="CAT1" populated="false" UUID="32f696e2-91cb-4de1-98c1-0210bb10d2da" name="information_schema" nativeTerm="database" physicalName="information_schema" >
+   </catalog>
+   <catalog id="CAT2" populated="false" UUID="6b4de8e9-36d9-406e-953f-74240b0d744a" name="AccountTemplate" nativeTerm="database" physicalName="AccountTemplate" >
+   </catalog>
+   <catalog id="CAT3" populated="false" UUID="a812a622-bf6c-498d-9b0d-af28c2646918" name="App4BI" nativeTerm="database" physicalName="App4BI" >
+   </catalog>
+   <catalog id="CAT4" populated="false" UUID="0b0a15d0-d57f-4d81-b777-a905f213e111" name="HRIS_Mirror" nativeTerm="database" physicalName="HRIS_Mirror" >
+   </catalog>
+   <catalog id="CAT5" populated="false" UUID="0ea5ae9a-d7e0-432a-adc2-2a413f05298a" name="JDE_Mirror" nativeTerm="database" physicalName="JDE_Mirror" >
+   </catalog>
+   <catalog id="CAT6" populated="false" UUID="3408f606-6457-4622-8b3f-903d2883aaec" name="MasterCenter" nativeTerm="database" physicalName="MasterCenter" >
+   </catalog>
+   <catalog id="CAT7" populated="false" UUID="27d8b509-5364-42e4-bd07-0dffb4f41f08" name="SDA_BI" nativeTerm="database" physicalName="SDA_BI" >
+   </catalog>
+   <catalog id="CAT8" populated="false" UUID="4e7aa090-1201-4225-9f4b-12e409a2ccc5" name="SDA_BI-REPO" nativeTerm="database" physicalName="SDA_BI-REPO" >
+   </catalog>
+   <catalog id="CAT9" populated="false" UUID="d0262feb-e383-4eec-b1eb-682ba1e2ddcd" name="SNP-DWH" nativeTerm="database" physicalName="SNP-DWH" >
+   </catalog>
+   <catalog id="CAT10" populated="false" UUID="4f48c7cc-b2ff-48f1-80d7-1a9a369c3ea1" name="SNP-ODS" nativeTerm="database" physicalName="SNP-ODS" >
+   </catalog>
+   <catalog id="CAT11" populated="false" UUID="2a4ffcd0-8bdd-44f2-bacf-6f36ac4d5b1b" name="SNP-REJECT" nativeTerm="database" physicalName="SNP-REJECT" >
+   </catalog>
+   <catalog id="CAT12" populated="false" UUID="5a37f96c-4772-4d53-89ba-2e7113861a98" name="SNP-STAGING" nativeTerm="database" physicalName="SNP-STAGING" >
+   </catalog>
+   <catalog id="CAT13" populated="false" UUID="ca39f11b-c899-489d-a8e6-887745b8785f" name="SNP_APP" nativeTerm="database" physicalName="SNP_APP" >
+   </catalog>
+   <catalog id="CAT14" populated="false" UUID="6cf42dba-6219-4232-b5cd-3be7a429f5f4" name="SNP_ETL" nativeTerm="database" physicalName="SNP_ETL" >
+   </catalog>
+   <catalog id="CAT15" populated="false" UUID="d32362cd-8678-4d1b-8112-5cc57b9dbf3c" name="bor" nativeTerm="database" physicalName="bor" >
+   </catalog>
+   <catalog id="CAT16" populated="false" UUID="35428793-f47a-409e-8ccb-8d494ad38897" name="log" nativeTerm="database" physicalName="log" >
+   </catalog>
+   <catalog id="CAT17" populated="false" UUID="4a5d6677-43ab-48a3-8ee6-9e2fd03d26be" name="mysql" nativeTerm="database" physicalName="mysql" >
+   </catalog>
+   <catalog id="CAT18" populated="false" UUID="2cab3f1f-9083-43a9-9bb4-6838e1298189" name="phpmyadmin" nativeTerm="database" physicalName="phpmyadmin" >
+   </catalog>
+   <catalog id="CAT19" populated="false" UUID="b2ab4bfd-41c1-40b4-93bf-5938fcf98f33" name="snp" nativeTerm="database" physicalName="snp" >
+   </catalog>
+   <catalog id="CAT20" populated="false" UUID="a26876de-72d6-46cb-b29a-daecd66993a0" name="temp_data" nativeTerm="database" physicalName="temp_data" >
+   </catalog>
+   <relationships>
+   </relationships>
+  </database>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB22" populated="true" UUID="b1fd1849-bb8b-472e-aed6-b04e79fffc3f" name="DimDate" objectType="TABLE" physicalName="DimDate" >
+   <remarks></remarks>
+   <folder id="FOLTAB221" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL23" populated="true" UUID="b7b4a98c-c593-4fb7-af69-3c5b579242f0" autoIncrement="false" autoIncrementSequenceName="DimDate_DateKey_seq" defaultValue="" name="DateKey" nullable="0" physicalName="DateKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="87530782-9114-45f2-b277-a74b53923aa5" autoIncrement="false" autoIncrementSequenceName="DimDate_Date_seq" defaultValue="" name="Date" nullable="0" physicalName="Date" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL25" populated="true" UUID="c47aa90e-cd5b-4568-8270-076bca1be34c" autoIncrement="false" autoIncrementSequenceName="DimDate_DayDate_seq" defaultValue="" name="DayDate" nullable="0" physicalName="DayDate" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL26" populated="true" UUID="cf54014d-7f84-40c9-906d-aa0245bc676d" autoIncrement="false" autoIncrementSequenceName="DimDate_DayNo_seq" defaultValue="" name="DayNo" nullable="0" physicalName="DayNo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="5a360eee-38ae-4a55-9586-891d05fab34c" autoIncrement="false" autoIncrementSequenceName="DimDate_DayOfWeek_seq" defaultValue="" name="DayOfWeek" nullable="0" physicalName="DayOfWeek" precision="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+     <remarks></remarks>
+    </column>
+    <column id="COL28" populated="true" UUID="ac9bd4dd-fd9c-48ed-aa46-22bd0d58cd84" autoIncrement="false" autoIncrementSequenceName="DimDate_WeekCalendar_seq" defaultValue="" name="WeekCalendar" nullable="0" physicalName="WeekCalendar" precision="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL29" populated="true" UUID="9e9c1d91-0519-4e08-a261-f11725f1a71d" autoIncrement="false" autoIncrementSequenceName="DimDate_WeekSunSat_seq" defaultValue="" name="WeekSunSat" nullable="0" physicalName="WeekSunSat" precision="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="27c5aa31-a258-4847-82db-b57000a39997" autoIncrement="false" autoIncrementSequenceName="DimDate_WeekThuWed_seq" defaultValue="" name="WeekThuWed" nullable="0" physicalName="WeekThuWed" precision="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL31" populated="true" UUID="76b9c7a0-ef8a-424d-9918-63f4f7e0b3f8" autoIncrement="false" autoIncrementSequenceName="DimDate_MonthNo_seq" defaultValue="" name="MonthNo" nullable="0" physicalName="MonthNo" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-6" userDefinedTypeUUID="608a1d2c-c960-44ac-b1f3-503aba0a5b7b" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="750e849f-4796-4525-8079-f99508dbda22" autoIncrement="false" autoIncrementSequenceName="DimDate_MonthName_seq" defaultValue="" name="MonthName" nullable="0" physicalName="MonthName" precision="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="8f13351e-b9f3-404e-8dec-3cef619ed14e" autoIncrement="false" autoIncrementSequenceName="DimDate_TimeGone_seq" defaultValue="" name="TimeGone" nullable="0" physicalName="TimeGone" precision="5" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL34" populated="true" UUID="28e3e9eb-9fd4-4c97-a2da-630e4da47749" autoIncrement="false" autoIncrementSequenceName="DimDate_Quarter_seq" defaultValue="" name="Quarter" nullable="0" physicalName="Quarter" precision="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+     <remarks></remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="aade9d1b-7af2-4903-85a5-9d77baafe8e2" autoIncrement="false" autoIncrementSequenceName="DimDate_HalfYear_seq" defaultValue="" name="HalfYear" nullable="0" physicalName="HalfYear" precision="13" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL36" populated="true" UUID="9c3ce24a-e958-4b58-ac1c-4e19911b858c" autoIncrement="false" autoIncrementSequenceName="DimDate_Year_seq" defaultValue="" name="Year" nullable="0" physicalName="Year" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL37" populated="true" UUID="fcac0e6b-655c-48cc-99be-ce853c0bbb40" autoIncrement="false" autoIncrementSequenceName="DimDate_YearCalendar_seq" defaultValue="" name="YearCalendar" nullable="0" physicalName="YearCalendar" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL38" populated="true" UUID="a54b9b7c-6436-4e18-8866-43bf61302e83" autoIncrement="false" autoIncrementSequenceName="DimDate_YearSunSat_seq" defaultValue="" name="YearSunSat" nullable="0" physicalName="YearSunSat" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL39" populated="true" UUID="ace3630b-7947-48f2-9274-36290104c7b4" autoIncrement="false" autoIncrementSequenceName="DimDate_YearThuWed_seq" defaultValue="" name="YearThuWed" nullable="0" physicalName="YearThuWed" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL40" populated="true" UUID="d86826db-ea87-4868-a55c-ab19b499d48a" autoIncrement="false" autoIncrementSequenceName="DimDate_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL41" populated="true" UUID="6d17bbe0-4ee1-4478-964e-3e8ee34be695" autoIncrement="false" autoIncrementSequenceName="DimDate_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB223" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB222" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB224" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX42" populated="true" UUID="b600a741-7e49-4b2b-9f6b-8b545841b83b" clustered="false" name="DimDate_pk" physicalName="dimdate_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC43" populated="true" UUID="03843c91-2d16-4e42-83b8-a6bbfcbd708b" ascendingOrDescending="UNSPECIFIED" column-ref="COL23" name="DateKey" physicalName="Time_key" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB44" populated="true" UUID="6fe1f7a1-66e4-4192-ba5d-877c985c474b" name="DimBranch" objectType="TABLE" physicalName="DimBranch" >
+   <remarks></remarks>
+   <folder id="FOLTAB441" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL45" populated="true" UUID="f30d4987-41dc-4d9a-8509-cf48a564b4d3" autoIncrement="false" autoIncrementSequenceName="DimBranch_BranchKey_seq" defaultValue="" name="BranchKey" nullable="0" physicalName="BranchKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL46" populated="true" UUID="c2d321ed-e7e8-4524-a339-3abf1ccdb50b" autoIncrement="false" autoIncrementSequenceName="BusinessUnit_dim_Channel_seq" defaultValue="" name="BusinessUnit" nullable="0" physicalName="BusinessUnit" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL47" populated="true" UUID="6f782bc6-8bb3-4c21-86a4-b44f5d2f7904" autoIncrement="false" autoIncrementSequenceName="DimBranch_LineOfBusiness_seq" defaultValue="" name="LineOfBusiness" nullable="0" physicalName="LineOfBusiness" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL48" populated="true" UUID="baca13e2-e741-4d8a-992f-08d3c8de2000" autoIncrement="false" autoIncrementSequenceName="DimBranch_Division_seq" defaultValue="" name="Division" nullable="0" physicalName="Division" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL49" populated="true" UUID="2deed788-b2d5-4993-9013-1b5c3cc7a4de" autoIncrement="false" autoIncrementSequenceName="DimBranch_Section_seq" defaultValue="" name="Section" nullable="0" physicalName="Section" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL50" populated="true" UUID="9edb7465-ef66-4f33-a45d-4938d8c803f0" autoIncrement="false" autoIncrementSequenceName="DimBranch_Area_seq" defaultValue="" name="Area" nullable="0" physicalName="Area" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL51" populated="true" UUID="ea0621b1-32de-45a9-83fe-d61b33b0d18a" autoIncrement="false" autoIncrementSequenceName="Area_dim_BranchCode_seq" defaultValue="" name="BranchCode" nullable="0" physicalName="BranchCode" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL52" populated="true" UUID="bac7a448-c8af-47e3-a1fa-9f0e85bc1afa" autoIncrement="false" autoIncrementSequenceName="Area_dim_BranchName_seq" defaultValue="" name="BranchName" nullable="0" physicalName="BranchName" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL53" populated="true" UUID="f40f17ac-3563-4759-9894-a46db70f5251" autoIncrement="false" autoIncrementSequenceName="Channel_dim_BranchType_seq" defaultValue="" name="BranchType" nullable="0" physicalName="BranchType" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="b83544bc-b14c-4e91-b686-703fb11b04a3" autoIncrement="false" autoIncrementSequenceName="DimBranch_BranchPattern_seq" defaultValue="" name="BranchPattern" nullable="0" physicalName="BranchPattern" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL55" populated="true" UUID="ac0d015c-6a3f-46a7-b02a-d76c67a834d8" autoIncrement="false" autoIncrementSequenceName="DimBranch_Type2_seq" defaultValue="" name="BranchStatus" nullable="0" physicalName="BranchStatus" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL56" populated="true" UUID="a2a78706-863e-49b8-a0d2-9d1c3461008e" autoIncrement="false" autoIncrementSequenceName="DimBranch_BranchAddress_seq" defaultValue="" name="BranchAddress" nullable="0" physicalName="BranchAddress" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL57" populated="true" UUID="fd2bcd73-c951-4091-a781-4181b0f65ea0" autoIncrement="false" autoIncrementSequenceName="DimBranch_Region_seq" defaultValue="" name="Region" nullable="0" physicalName="Region" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL58" populated="true" UUID="79be6d9f-bf97-4f00-98d7-4258bcbe2128" autoIncrement="false" autoIncrementSequenceName="DimBranch_Province_seq" defaultValue="" name="Province" nullable="0" physicalName="Province" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL59" populated="true" UUID="b1a7f4e0-c083-40a3-bdc0-1c4af0b99003" autoIncrement="false" autoIncrementSequenceName="DimBranch_ProvinceType_seq" defaultValue="" name="ProvinceType" nullable="0" physicalName="ProvinceType" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL60" populated="true" UUID="c82191f9-4d93-431b-9ed0-1599f70c7f03" autoIncrement="false" autoIncrementSequenceName="DimBranch_Store_seq" defaultValue="" name="LocationType" nullable="0" physicalName="LocationType" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL61" populated="true" UUID="78d661bb-597a-44c0-bfde-4c771b1e1a05" autoIncrement="false" autoIncrementSequenceName="DimBranch_District_seq" defaultValue="" name="District" nullable="0" physicalName="District" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL62" populated="true" UUID="88d2c543-7412-4177-87cd-0860f4db3a8d" autoIncrement="false" autoIncrementSequenceName="DimBranch_SubDistrict_seq" defaultValue="" name="SubDistrict" nullable="0" physicalName="SubDistrict" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL63" populated="true" UUID="d52ae708-09f9-4f51-9446-9151b722644e" autoIncrement="false" autoIncrementSequenceName="DimBranch_BranchOpenDate_seq" defaultValue="" name="BranchOpenDate" nullable="0" physicalName="BranchOpenDate" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL64" populated="true" UUID="4b14f258-7700-4386-b26e-b1dff89becae" autoIncrement="false" autoIncrementSequenceName="DimBranch_BranchChangeDate_seq" defaultValue="" name="BranchChangeDate" nullable="0" physicalName="BranchChangeDate" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL65" populated="true" UUID="5d09145f-7e51-4d3f-8f98-7ad6a5a01901" autoIncrement="false" autoIncrementSequenceName="DimBranch_BranchCloseDate_seq" defaultValue="" name="BranchCloseDate" nullable="0" physicalName="BranchCloseDate" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL66" populated="true" UUID="bd8ff7b1-fc80-4538-aa63-276c53be305f" autoIncrement="false" autoIncrementSequenceName="DimBranch_BranchSquareM_seq" defaultValue="" name="BranchSpace" nullable="0" physicalName="BranchSpace" precision="5" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL67" populated="true" UUID="a524cfe4-1339-425a-8981-018095b75858" autoIncrement="false" autoIncrementSequenceName="DimBranch_Seat_seq" defaultValue="" name="Seat" nullable="0" physicalName="Seat" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL68" populated="true" UUID="e98f93ab-d673-4d29-8fb8-dfd68c2abdd4" autoIncrement="false" autoIncrementSequenceName="DimBranch_RenovateStatus_seq" defaultValue="" name="RenovateStatus" nullable="0" physicalName="RenovateStatus" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL69" populated="true" UUID="288de6b9-4c38-499e-8c8a-25f8bad156f0" autoIncrement="false" autoIncrementSequenceName="DimBranch_DataStartDate_seq" defaultValue="" name="DataStartDate" nullable="0" physicalName="DataStartDate" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL70" populated="true" UUID="bcf9a528-8539-4870-ba48-2d7c6b5abb86" autoIncrement="false" autoIncrementSequenceName="DimBranch_DataEndDate_seq" defaultValue="" name="DataEndDate" nullable="0" physicalName="DataEndDate" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL71" populated="true" UUID="31cb1207-48b0-4e77-88b8-6e3214d88d44" autoIncrement="false" autoIncrementSequenceName="DimBranch_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL72" populated="true" UUID="e4aea549-a414-4b7e-9579-fd169462c11c" autoIncrement="false" autoIncrementSequenceName="DimBranch_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB443" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB442" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB444" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX73" populated="true" UUID="7073b9a0-fd98-493d-b67f-5cd5afe49b8f" clustered="false" name="DimBranch_pk" physicalName="dimbranch_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC74" populated="true" UUID="e6b32a86-b64e-4808-acee-c6e93a6015ed" ascendingOrDescending="UNSPECIFIED" column-ref="COL45" name="BranchKey" physicalName="BranchKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB75" populated="true" UUID="9f77cedc-890f-48fd-8382-ea1c79457f12" name="DimProduct" objectType="TABLE" physicalName="DimProduct" >
+   <remarks></remarks>
+   <folder id="FOLTAB751" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL76" populated="true" UUID="bda623d5-a3b3-4116-b607-c8d948281e9f" autoIncrement="true" autoIncrementSequenceName="DimProduct_ProductKey_seq" defaultValue="" name="ProductKey" nullable="0" physicalName="ProductKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL77" populated="true" UUID="f0a4411e-208b-4347-a995-5603373321e0" autoIncrement="false" autoIncrementSequenceName="DimProduct_Source_seq" defaultValue="" name="Source" nullable="0" physicalName="Source" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL78" populated="true" UUID="414837d9-ade5-4a32-b768-0bc9306f3e0a" autoIncrement="false" autoIncrementSequenceName="DimProduct_ProductCategoryCode_seq" defaultValue="" name="ProductCategoryCode" nullable="0" physicalName="ProductCategoryCode" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL79" populated="true" UUID="d7b94743-037d-4f95-b7f3-f164acdf186c" autoIncrement="false" autoIncrementSequenceName="DimProduct_ProductCategory_seq" defaultValue="" name="ProductCategory" nullable="0" physicalName="ProductCategory" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL80" populated="true" UUID="8bd52449-1bec-4010-aba8-f5beda07f05f" autoIncrement="false" autoIncrementSequenceName="DimProduct_ProductGroupCode_seq" defaultValue="" name="ProductGroupCode" nullable="0" physicalName="ProductGroupCode" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL81" populated="true" UUID="c4a13273-55ba-4172-a91f-b3791e9366a8" autoIncrement="false" autoIncrementSequenceName="DimProduct_ProductGroup_seq" defaultValue="" name="ProductGroup" nullable="0" physicalName="ProductGroup" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL82" populated="true" UUID="fd438eef-dc60-4d0d-baef-f5d30aebb026" autoIncrement="false" autoIncrementSequenceName="DimProduct_MarketingProductGroup_seq" defaultValue="" name="MarketingProductGroup" nullable="0" physicalName="MarketingProductGroup" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL83" populated="true" UUID="5e371957-449f-45c2-a21c-46c52bcc9d05" autoIncrement="false" autoIncrementSequenceName="DimProduct_MarketingProductSequence_seq" defaultValue="" name="MarketingProductSequence" nullable="0" physicalName="MarketingProductSequence" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="5" userDefinedTypeUUID="69fb547f-e14c-4748-9746-4c0e9e94eb52" >
+     <remarks></remarks>
+    </column>
+    <column id="COL84" populated="true" UUID="599bd0ac-e27b-43c1-8abc-df5dd8264439" autoIncrement="false" autoIncrementSequenceName="DimProduct_ProductName_seq" defaultValue="" name="ProductName" nullable="0" physicalName="ProductName" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL85" populated="true" UUID="69664fff-3955-431c-94f4-e2cae1811177" autoIncrement="false" autoIncrementSequenceName="DimProduct_ProductSizeGroup_seq" defaultValue="" name="ProductSizeGroup" nullable="0" physicalName="ProductSizeGroup" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL86" populated="true" UUID="aa0b162c-3ed8-497b-b7bd-bd1a8149cfb4" autoIncrement="false" autoIncrementSequenceName="DimProduct_ProductCode_seq" defaultValue="" name="ProductCode" nullable="0" physicalName="ProductCode" precision="25" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL87" populated="true" UUID="bfec76cc-2779-4f30-8836-7d1b308642e9" autoIncrement="false" autoIncrementSequenceName="DimProduct_ProductType_seq" defaultValue="" name="ProductType" nullable="0" physicalName="ProductType" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL88" populated="true" UUID="0350f230-4a8e-4c66-8a5f-21d675c999e6" autoIncrement="false" autoIncrementSequenceName="DimProduct_ProductStatus_seq" defaultValue="" name="ProductStatus" nullable="0" physicalName="ProductStatus" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL89" populated="true" UUID="0a2d6d2f-3340-418e-a5da-88c79936c18e" autoIncrement="false" autoIncrementSequenceName="DimProduct_ProductLaunchDate_seq" defaultValue="" name="ProductLaunchDate" nullable="1" physicalName="ProductLaunchDate" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL90" populated="true" UUID="6bebd2ba-3614-4895-b29f-862d94af3a8e" autoIncrement="false" autoIncrementSequenceName="DimProduct_BarCode_seq" defaultValue="" name="BarCode" nullable="0" physicalName="BarCode" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL91" populated="true" UUID="9b00cd4a-6ffe-4100-b9b8-7b6cec0b85cc" autoIncrement="false" autoIncrementSequenceName="DimProduct_UOM_seq" defaultValue="" name="UOM" nullable="0" physicalName="UOM" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL92" populated="true" UUID="851b5b81-7beb-4d6b-be2c-838f67b45d71" autoIncrement="false" autoIncrementSequenceName="DimProduct_StockType_seq" defaultValue="" name="StockType" nullable="0" physicalName="StockType" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL93" populated="true" UUID="d2a3010a-5b0b-49b5-894a-e3dc5a5fd831" autoIncrement="false" autoIncrementSequenceName="DimProduct_DataStartDate_seq" defaultValue="" name="DataStartDate" nullable="0" physicalName="DataStartDate" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL94" populated="true" UUID="bb22976e-eb4b-42bd-b05d-fb1debc36b28" autoIncrement="false" autoIncrementSequenceName="DimProduct_DataEndDate_seq" defaultValue="" name="DataEndDate" nullable="0" physicalName="DataEndDate" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL95" populated="true" UUID="e57f510d-d69b-4555-9f99-7db043e17489" autoIncrement="false" autoIncrementSequenceName="DimProduct_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL96" populated="true" UUID="32cdb52a-907e-4578-9bda-93ee19a2e330" autoIncrement="false" autoIncrementSequenceName="DimProduct_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB753" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB752" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB754" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX97" populated="true" UUID="b3a631ef-c2ee-4a95-8403-e9a8b7010aa8" clustered="false" name="DimProduct_pk" physicalName="crm_dimproduct_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC98" populated="true" UUID="ef832baf-d779-487d-a3f8-25310e92f610" ascendingOrDescending="UNSPECIFIED" column-ref="COL76" name="ProductKey" physicalName="Product_key" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB99" populated="true" UUID="4185d7bf-824c-470a-a24a-5946e732359e" name="DimTime" objectType="TABLE" physicalName="DimTime" >
+   <remarks></remarks>
+   <folder id="FOLTAB991" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL100" populated="true" UUID="0efac14f-6da7-4cca-b1cf-74642a006e11" autoIncrement="false" autoIncrementSequenceName="DimTime_TimeKey_seq" defaultValue="" name="TimeKey" nullable="0" physicalName="TimeKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL101" populated="true" UUID="26fb6abb-1b27-4fb8-85e2-f002541de762" autoIncrement="false" autoIncrementSequenceName="DimTime_TimeMinute_seq" defaultValue="" name="TimeMinute" nullable="0" physicalName="TimeMinute" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="92" userDefinedTypeUUID="10d6960f-169d-47c2-860a-37341342b1d5" >
+     <remarks></remarks>
+    </column>
+    <column id="COL102" populated="true" UUID="da4e0a63-a1fa-417a-8606-e2354a604d07" autoIncrement="false" autoIncrementSequenceName="DimTime_TimeHour_seq" defaultValue="" name="TimeHour" nullable="0" physicalName="TimeHour" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="92" userDefinedTypeUUID="10d6960f-169d-47c2-860a-37341342b1d5" >
+     <remarks></remarks>
+    </column>
+    <column id="COL103" populated="true" UUID="e79c0456-f3db-439a-a342-82334747f8ad" autoIncrement="false" autoIncrementSequenceName="DimTime_TimePeriod_seq" defaultValue="" name="TimePeriod" nullable="0" physicalName="TimePeriod" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL104" populated="true" UUID="90f79823-03d8-4fc5-8671-7d31bdf1b565" autoIncrement="false" autoIncrementSequenceName="DimTime_TimeRange_seq" defaultValue="" name="TimeRange" nullable="0" physicalName="TimeRange" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL105" populated="true" UUID="2520e1f3-34f5-4736-a951-b993513f51ef" autoIncrement="false" autoIncrementSequenceName="DimTime_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL106" populated="true" UUID="05e0593b-8250-49f1-b3df-f2cb621855f8" autoIncrement="false" autoIncrementSequenceName="DimTime_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB993" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB992" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB994" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX107" populated="true" UUID="ebdce26e-97a7-4689-a7b8-6588139a8107" clustered="false" name="DimTime_pk" physicalName="dimtime_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC108" populated="true" UUID="0e748337-4cca-49b0-8f38-784d4359869f" ascendingOrDescending="UNSPECIFIED" column-ref="COL100" name="TimeKey" physicalName="TimeKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB109" populated="true" UUID="2762e7a2-40b8-452a-8b29-c18c5d753011" name="CRM_DimMemberType" objectType="TABLE" physicalName="CRM_DimMemberType" >
+   <remarks>คือประเภทสมาชิก เช่น 
+01-ทำบัตรใหม่ 
+03-VIP</remarks>
+   <folder id="FOLTAB1091" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL110" populated="true" UUID="5bfbd89c-2e10-43ec-969a-2e5589cc32af" autoIncrement="false" autoIncrementSequenceName="CRM_DimMemberType_MemberTypeKey_seq" defaultValue="" name="MemberTypeKey" nullable="0" physicalName="MemberTypeKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL111" populated="true" UUID="116f49ef-e97b-47ca-91f6-5616dffb7a04" autoIncrement="false" autoIncrementSequenceName="CRM_DimMemberType_MemberTypeCode_seq" defaultValue="" name="MemberTypeCode" nullable="0" physicalName="MemberTypeCode" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL112" populated="true" UUID="9e932743-363a-488f-98ed-116a99e59a31" autoIncrement="false" autoIncrementSequenceName="CRM_DimMemberType_MemberTypeName_seq" defaultValue="" name="MemberTypeName" nullable="0" physicalName="MemberTypeName" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL113" populated="true" UUID="7670c257-4c04-4dcd-96c1-05555c27b949" autoIncrement="false" autoIncrementSequenceName="CRM_DimMemberType_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL114" populated="true" UUID="8983f706-bb5d-47d9-8e9a-40381569a9ed" autoIncrement="false" autoIncrementSequenceName="CRM_DimMemberType_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1093" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1092" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1094" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX115" populated="true" UUID="fe0e67e1-f632-4d1e-937a-9cd1e7b75687" clustered="false" name="CRM_DimMemberType_pk" physicalName="crm_dimmembertype_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC116" populated="true" UUID="e078cf75-d7d1-4404-8ccb-c6a2f3748303" ascendingOrDescending="UNSPECIFIED" column-ref="COL110" name="MemberTypeKey" physicalName="MemberTypeKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB117" populated="true" UUID="707c8104-4456-461c-8579-d78fc78073d6" name="CRM_DimReward" objectType="TABLE" physicalName="CRM_DimReward" >
+   <remarks></remarks>
+   <folder id="FOLTAB1171" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL118" populated="true" UUID="e5a5a207-85ed-4aea-b98c-955581b9f044" autoIncrement="false" autoIncrementSequenceName="CRM_DimReward_RewardKey_seq" defaultValue="" name="RewardKey" nullable="0" physicalName="RewardKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL119" populated="true" UUID="cf5186bf-43b5-4732-8376-5dde046f0e69" autoIncrement="false" autoIncrementSequenceName="CRM_DimReward_RewardCode_seq" defaultValue="" name="RewardCode" nullable="0" physicalName="RewardCode" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>รหัสของรางวัล</remarks>
+    </column>
+    <column id="COL120" populated="true" UUID="aa497f0a-b299-445e-99ca-878934bd6e95" autoIncrement="false" autoIncrementSequenceName="CRM_DimReward_RewardName_seq" defaultValue="" name="RewardName" nullable="0" physicalName="RewardName" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ชื่อของรางวัล</remarks>
+    </column>
+    <column id="COL121" populated="true" UUID="65fbd8b1-c06f-4b16-a1d8-9285cb12fbce" autoIncrement="false" autoIncrementSequenceName="CRM_DimReward_RewardType_seq" defaultValue="" name="RewardType" nullable="0" physicalName="RewardType" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL122" populated="true" UUID="d507b3b5-6850-40a3-8882-fdc6654106b6" autoIncrement="false" autoIncrementSequenceName="CRM_DimReward_RewardPoint_seq" defaultValue="" name="RewardPoint" nullable="0" physicalName="RewardPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มที่กำหนดเพื่อใช้แลกของรางวัลนี้</remarks>
+    </column>
+    <column id="COL123" populated="true" UUID="6c57eb83-b424-43c6-8b14-9cd7c1982a38" autoIncrement="false" autoIncrementSequenceName="CRM_DimReward_RewardAmount_seq" defaultValue="" name="RewardAmount" nullable="0" physicalName="RewardAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>มูลค่าของรางวัลชิ้นนี้</remarks>
+    </column>
+    <column id="COL124" populated="true" UUID="fb696936-0ff8-4658-b22b-46b90dd971fb" autoIncrement="false" autoIncrementSequenceName="CRM_DimReward_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL125" populated="true" UUID="1bdcca66-a9c8-47cc-a4a0-cd8168aa08ab" autoIncrement="false" autoIncrementSequenceName="CRM_DimReward_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1173" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1172" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1174" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX126" populated="true" UUID="a0e03f13-5c39-4c94-8995-d5553b126c5b" clustered="false" name="CRM_DimReward_pk" physicalName="crm_dimreward_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC127" populated="true" UUID="edf3376a-1993-47dc-a950-f1e0aa473a59" ascendingOrDescending="UNSPECIFIED" column-ref="COL118" name="RewardKey" physicalName="RewardKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB128" populated="true" UUID="ff160bbb-3307-40e7-94c7-55b0bb7d895e" name="CRM_DimMember" objectType="TABLE" physicalName="CRM_DimMember" >
+   <remarks></remarks>
+   <folder id="FOLTAB1281" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL129" populated="true" UUID="0879943c-fc05-4f1f-ad7a-6f47bf78b7fb" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_MemberKey_seq" defaultValue="" name="MemberKey" nullable="0" physicalName="MemberKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL130" populated="true" UUID="b471f1a2-76e8-43ad-b903-8f21c8669ae6" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_MemberCode_seq" defaultValue="" name="MemberCode" nullable="0" physicalName="MemberCode" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>รหัสสมาชิก</remarks>
+    </column>
+    <column id="COL131" populated="true" UUID="67bd44c0-76cf-4a81-9dc6-dd2caf57613b" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_MemberTypeCode_seq" defaultValue="" name="MemberTypeCode" nullable="0" physicalName="MemberTypeCode" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL132" populated="true" UUID="40289985-e175-4074-96bb-885290913461" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_MemberTypeName_seq" defaultValue="" name="MemberTypeName" nullable="0" physicalName="MemberTypeName" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL133" populated="true" UUID="ceb1561a-996e-4617-84be-e9a71229aa88" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_HaveMobileFlag_seq" defaultValue="" name="HaveMobileFlag" nullable="0" physicalName="HaveMobileFlag" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ได้กรอกเบอร์มือถือในใบสมัครหรือไม่</remarks>
+    </column>
+    <column id="COL134" populated="true" UUID="6ac6bcac-6e26-4ac8-ae57-80a4b07b3a93" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_HaveEmailFlag_seq" defaultValue="" name="HaveEmailFlag" nullable="0" physicalName="HaveEmailFlag" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ได้กรอก Email ในใบสมัครหรือไม่</remarks>
+    </column>
+    <column id="COL135" populated="true" UUID="1fe437a2-0551-45ea-a4d6-69c27771c790" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_Gender_seq" defaultValue="" name="Gender" nullable="0" physicalName="Gender" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>เพศของสมาชิก</remarks>
+    </column>
+    <column id="COL136" populated="true" UUID="96bf520d-5cf6-4d7e-acd7-bfe193dd8a0a" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_MaritalStatus_seq" defaultValue="" name="MaritalStatus" nullable="0" physicalName="MaritalStatus" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>สถานภาพสมรส</remarks>
+    </column>
+    <column id="COL137" populated="true" UUID="c847ea17-1043-475c-af23-9438b16b6241" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_Province_seq" defaultValue="" name="Province" nullable="0" physicalName="Province" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>จังหวัดที่สมาชิกอาศัยอยู่</remarks>
+    </column>
+    <column id="COL138" populated="true" UUID="eebe656b-7a5b-4ad2-bcc3-bbbf3adb1b51" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_Region_seq" defaultValue="" name="Region" nullable="0" physicalName="Region" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ภาคที่สมาชิกอาศัยอยู่ กลาง เหนือ ใต้ ออก ตก</remarks>
+    </column>
+    <column id="COL139" populated="true" UUID="51c857a2-b6fc-4508-8e69-fcedf47cc059" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_LegalEntity _seq" defaultValue="" name="LegalEntity " nullable="0" physicalName="LegalEntity" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>บัตรสมาชิกนี้มีสถานภาพเป็น
+บุคคล หรือ นิติบุคคล</remarks>
+    </column>
+    <column id="COL140" populated="true" UUID="3c537a45-7366-4720-94ed-bde62e041572" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_MemberAppliedDate_seq" defaultValue="" name="MemberAppliedDate" nullable="0" physicalName="MemberAppliedDate" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL141" populated="true" UUID="58c78287-073e-43b8-9f1d-721856ce20fe" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL142" populated="true" UUID="692a7beb-8f46-4f59-9e7d-ef98344f46b2" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1283" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1282" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1284" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX143" populated="true" UUID="84667337-49a0-4407-b303-944740a80cd2" clustered="false" name="CRM_DimMember_pk" physicalName="crm_dimmember_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC144" populated="true" UUID="e56119e7-cc75-4ea1-8fbe-1dccf2c05fd5" ascendingOrDescending="UNSPECIFIED" column-ref="COL129" name="MemberKey" physicalName="MemberKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB145" populated="true" UUID="1f16c409-c39c-47de-be6f-67932f4a66a5" name="CRM_FactMemberMonthly" objectType="TABLE" physicalName="CRM_FactMemberMonthly" >
+   <remarks>[3,4,5] [11] [16,17][19,20] [41]
+สามารถ Drill up ไปเป็น
+Active รายเดือน   แบบทุกเดือน
+Active รายไตรมาส แบบทุกเดือน
+Active รายปี      แบบทุกเดือน</remarks>
+   <folder id="FOLTAB1451" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL146" populated="true" UUID="9f697494-2c80-4164-8c81-df7505dba2a6" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_MonthKey_seq" defaultValue="" name="MonthKey" nullable="0" physicalName="MonthKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>MonthKey = FirstDate of current month</remarks>
+    </column>
+    <column id="COL147" populated="true" UUID="84d1ee6c-be95-423f-9058-48897a9bad0e" autoIncrement="false" autoIncrementSequenceName="CRM_DimMemberType_MemberTypeKey_seq" defaultValue="" name="MemberTypeKey" nullable="0" physicalName="MemberTypeKey" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL148" populated="true" UUID="f94d48df-1cbc-4e03-a60e-f2d1902e8344" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfNewMember_seq" defaultValue="" name="NoOfNewMember" nullable="0" physicalName="NoOfNewMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกใหม่ที่เกิดขึ้นในเดือนนี้</remarks>
+    </column>
+    <column id="COL149" populated="true" UUID="602063cf-3fc5-4122-a836-f07a94dad796" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfRenewMember_seq" defaultValue="" name="NoOfRenewMember" nullable="0" physicalName="NoOfRenewMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่มาต่ออายุในเดือนนี้</remarks>
+    </column>
+    <column id="COL150" populated="true" UUID="f97975eb-a5ad-4e3a-bf28-a242ce2f2c55" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfExpiredMember_seq" defaultValue="" name="NoOfExpiredMember" nullable="0" physicalName="NoOfExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่หมดอายุในเดือนนี้</remarks>
+    </column>
+    <column id="COL151" populated="true" UUID="a4b1c6ea-b604-421d-886b-f08aa469d5f7" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfNotExpiredMember_seq" defaultValue="" name="NoOfNotExpiredMember" nullable="0" physicalName="NoOfNotExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่เดือนนี้ยังไม่หมดอายุ</remarks>
+    </column>
+    <column id="COL152" populated="true" UUID="ec555583-fe14-4542-838f-0f52a1be2533" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfAllMember_seq" defaultValue="" name="NoOfAllMember" nullable="0" physicalName="NoOfAllMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>ฐานสมาชิกทั้งหมด (ที่มีในฐานข้อมูล)</remarks>
+    </column>
+    <column id="COL153" populated="true" UUID="fcaf8459-40ba-4071-a76f-2aece2223fb1" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfAllExpiredMember_seq" defaultValue="" name="NoOfAllExpiredMember" nullable="0" physicalName="NoOfAllExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>ยอดสมาชิกที่หมดอายุแล้วทั้งหมด 
+(คิดตั้งแต่ 2007 จนถึงเดือนนี้)</remarks>
+    </column>
+    <column id="COL154" populated="true" UUID="f4b79e05-3054-4eb3-bab0-57dff8442822" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfAllNotExpiredMember_seq" defaultValue="" name="NoOfAllNotExpiredMember" nullable="0" physicalName="NoOfAllNotExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ยังไม่หมดอายุทั้งหมด
+(คิดตั้งแต่ 2007 จนถึงเดือนนี้)</remarks>
+    </column>
+    <column id="COL155" populated="true" UUID="fac960ed-dd7a-4243-8bbf-5150646e7434" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfActiveMember_seq" defaultValue="" name="NoOfActiveMember" nullable="0" physicalName="NoOfActiveMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ Activeแบบรายเดือน ในเดือนนี้
+คือ เดือนนี้มาซื้อของอย่างน้อย 1 ครั้ง</remarks>
+    </column>
+    <column id="COL156" populated="true" UUID="abb6930d-93e3-4628-a9d8-727f03baa3a4" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfPurchaseMember_seq" defaultValue="" name="NoOfPurchaseMember" nullable="0" physicalName="NoOfPurchaseMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมากชิกที่มาซื้อของในเดือนนี้</remarks>
+    </column>
+    <column id="COL157" populated="true" UUID="f3b068a7-94b8-4259-9f23-c43ef5727b13" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_PurchaseAmount_seq" defaultValue="" name="PurchaseAmount" nullable="0" physicalName="PurchaseAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>ยอดซื้อของสมาชิกในเดือนนี้</remarks>
+    </column>
+    <column id="COL158" populated="true" UUID="c5113153-a0fd-43c1-8098-4a3379b6fcb2" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfBill_seq" defaultValue="" name="NoOfBill" nullable="0" physicalName="NoOfBill" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนบิล</remarks>
+    </column>
+    <column id="COL159" populated="true" UUID="2f3531fc-12e5-471b-ba06-3b56ea0c540d" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfPointFromLastMonth_seq" defaultValue="" name="NoOfPointFromLastMonth" nullable="0" physicalName="NoOfPointFromLastMonth" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มยกมาจากเดือนที่แล้ว</remarks>
+    </column>
+    <column id="COL160" populated="true" UUID="09551419-4b85-4f69-8c1b-d81936288323" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfNewPoint_seq" defaultValue="" name="NoOfNewPoint" nullable="0" physicalName="NoOfNewPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มที่รับเข้าในเดือนนี้</remarks>
+    </column>
+    <column id="COL161" populated="true" UUID="572a81c7-08d6-4bea-b232-5dd4a5257b5b" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_RemainingPoint_seq" defaultValue="" name="RemainingPoint" nullable="0" physicalName="RemainingPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มสะสมทั้งหมดของระบบ ที่คิด ณ เดือนนี้</remarks>
+    </column>
+    <column id="COL162" populated="true" UUID="eb6a1c98-855d-44c5-9fd1-13364e7c27a8" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfRedeemPoint_seq" defaultValue="" name="NoOfRedeemPoint" nullable="0" physicalName="NoOfRedeemPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มใช้แลกของรางวัล</remarks>
+    </column>
+    <column id="COL163" populated="true" UUID="e24ed7b8-1b96-46a7-986a-8def7b8f9a1f" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfRedeemPointForRenew_seq" defaultValue="" name="NoOfRedeemPointForRenew" nullable="0" physicalName="NoOfRedeemPointForRenew" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มที่ใช้ต่ออายุ</remarks>
+    </column>
+    <column id="COL164" populated="true" UUID="3440548b-2564-48a1-af6a-042c1e9be85b" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfRenewByCash _seq" defaultValue="" name="NoOfRenewByCash" nullable="0" physicalName="NoOfRenewByCash" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>รวมยอดเงินที่ลูกค้ามาต่ออายุ</remarks>
+    </column>
+    <column id="COL165" populated="true" UUID="76db60da-15aa-4348-9478-7fc917c753c5" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfExpiredPoint_seq" defaultValue="" name="NoOfExpiredPoint" nullable="0" physicalName="NoOfExpiredPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มหมดอายุ</remarks>
+    </column>
+    <column id="COL166" populated="true" UUID="616eb3d5-d693-40dc-bbac-42e3920fd315" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfMemberRenewByCash_seq" defaultValue="" name="NoOfMemberRenewByCash" nullable="0" physicalName="NoOfMemberRenewByCash" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ต่ออายุด้วยเงินสด</remarks>
+    </column>
+    <column id="COL167" populated="true" UUID="1c4c3ad9-d0a7-4619-bc88-539752f55f10" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_NoOfMemberRenewByPoint_seq" defaultValue="" name="NoOfMemberRenewByPoint" nullable="0" physicalName="NoOfMemberRenewByPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ต่ออายุด้วยแต้ม</remarks>
+    </column>
+    <column id="COL168" populated="true" UUID="6681146b-e198-464d-b73a-55f1ddd5d65f" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL169" populated="true" UUID="3e0d9a77-d80e-4d00-9c59-7b3157578a91" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberMonthly_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1453" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1452" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1454" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX170" populated="true" UUID="68c056f6-4726-4c40-9a4f-01476a71fa16" clustered="false" name="CRM_FactMemberMonthly_pk" physicalName="crm_factmembertransmonthly_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC171" populated="true" UUID="4536ef3f-d479-4aa0-98de-981c15e1a343" ascendingOrDescending="UNSPECIFIED" column-ref="COL146" name="MonthKey" physicalName="MonthKey" />
+     <index-column id="IDC172" populated="true" UUID="097ca064-d285-4dfe-81e1-62747f3b4406" ascendingOrDescending="UNSPECIFIED" column-ref="COL147" name="MemberTypeKey" physicalName="MemberTypeKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB173" populated="true" UUID="8ed5ef99-b133-4957-9f36-f3d4da4484eb" name="CRM_DimRegisterType" objectType="TABLE" physicalName="CRM_DimRegisterType" >
+   <remarks>เอาจาก BOR Dept.0033
+เก็บว่าสมัครสมาชิกหรือต่ออายุแบบไหน
+Example. 
+1.ซื้อ PLU-0131
+2 ซื้อ PLU-0132
+3 ซื้อ PLU-0133
+4 ซื้อ PLU-0191
+5 ต่อด้วยเงินสด
+6 ต่อด้วยแต้ม</remarks>
+   <folder id="FOLTAB1731" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL174" populated="true" UUID="58ef4a4a-fb15-4f64-b7e2-7f94baba8075" autoIncrement="false" autoIncrementSequenceName="CRM_DimRegisterType_RegisterTypeKey_seq" defaultValue="" name="RegisterTypeKey" nullable="0" physicalName="RegisterTypeKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL175" populated="true" UUID="80b20d28-9d93-43a0-9faf-ac656cfddf2b" autoIncrement="false" autoIncrementSequenceName="DimRegisterType_RegisterCode_seq" defaultValue="" name="RegisterTypeCode" nullable="0" physicalName="RegisterTypeCode" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ซื้อบัตรสมาชิก ผ่าน PLU อะไร</remarks>
+    </column>
+    <column id="COL176" populated="true" UUID="e28af90d-f7b6-42af-9302-12c1cf5f9c13" autoIncrement="false" autoIncrementSequenceName="CRM_DimRegisterType_RegisterTypeName_seq" defaultValue="" name="RegisterTypeName" nullable="0" physicalName="RegisterTypeName" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Description ของ PLU
+
+(PDesc ใน Table Product)</remarks>
+    </column>
+    <column id="COL177" populated="true" UUID="905e3d98-1ea0-4089-9dbd-6cd9c52d9c7e" autoIncrement="false" autoIncrementSequenceName="CRM_DimRegisterType_RegisterViaPLU_seq" defaultValue="" name="RegisterViaPLU" nullable="0" physicalName="RegisterViaPLU" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ซื้อบัตรสมาชิก ผ่าน PLU อะไร</remarks>
+    </column>
+    <column id="COL178" populated="true" UUID="81beccd7-4ae6-43a9-85ec-0751c1918f93" autoIncrement="false" autoIncrementSequenceName="CRM_DimRegisterType_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL179" populated="true" UUID="66f75129-f126-4903-9b15-33853c348b37" autoIncrement="false" autoIncrementSequenceName="CRM_DimRegisterType_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1733" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1732" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1734" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX180" populated="true" UUID="e8f959d3-c555-453d-a76c-5aa296fa24f6" clustered="false" name="CRM_DimRegisterType_pk" physicalName="crm_dimregistertype_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC181" populated="true" UUID="699f56c3-e5de-4bdf-b2e8-19a3ba9aab08" ascendingOrDescending="UNSPECIFIED" column-ref="COL174" name="RegisterTypeKey" physicalName="RegisterTypeKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB182" populated="true" UUID="1f310e74-11d0-4b05-8832-33e137162b3f" name="CRM_FactMemberQuarterly" objectType="TABLE" physicalName="CRM_FactMemberQuarterly" >
+   <remarks>Active รายไตรมาส เดือนละครั้ง</remarks>
+   <folder id="FOLTAB1821" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL183" populated="true" UUID="5baca5a5-1f7b-4d53-b710-4809a4f2bb8c" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_QuarterKey_seq" defaultValue="" name="QuarterKey" nullable="0" physicalName="QuarterKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL184" populated="true" UUID="873dff75-c551-4153-9039-816b663da253" autoIncrement="false" autoIncrementSequenceName="CRM_DimMemberType_MemberTypeKey_seq" defaultValue="" name="MemberTypeKey" nullable="0" physicalName="MemberTypeKey" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL185" populated="true" UUID="4dca5b05-5d7d-4500-83a5-239cd5161c53" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfNewMember_seq" defaultValue="" name="NoOfNewMember" nullable="0" physicalName="NoOfNewMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกใหม่ที่เกิดขึ้นในไตรมาสนี้</remarks>
+    </column>
+    <column id="COL186" populated="true" UUID="ca9eb31a-886f-42c1-883e-ac753160a32e" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfRenewMember_seq" defaultValue="" name="NoOfRenewMember" nullable="0" physicalName="NoOfRenewMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่มาต่ออายุในไตรมาสนี้</remarks>
+    </column>
+    <column id="COL187" populated="true" UUID="953a2840-f85b-4ae1-b6e5-c00ac94824b4" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfExpiredMember_seq" defaultValue="" name="NoOfExpiredMember" nullable="0" physicalName="NoOfExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่หมดอายุในไตรมาสนี้</remarks>
+    </column>
+    <column id="COL188" populated="true" UUID="680d71f0-3f77-43d9-93bd-896df686109a" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfNotExpiredMember_seq" defaultValue="" name="NoOfNotExpiredMember" nullable="0" physicalName="NoOfNotExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ไตรมาสนี้ยังไม่หมดอายุ</remarks>
+    </column>
+    <column id="COL189" populated="true" UUID="e0592cfc-c361-4da3-937b-7eb8640d3063" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfActiveMember_seq" defaultValue="" name="NoOfActiveMember" nullable="0" physicalName="NoOfActiveMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ Active ในไตรมาสนี้
+คือ ไตรมาสนี้มาซื้อของอย่างน้อย 1 ครั้ง</remarks>
+    </column>
+    <column id="COL190" populated="true" UUID="8259d7f0-18bf-4d4a-9bdf-5c6801a95c6f" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfAllMember_seq" defaultValue="" name="NoOfAllMember" nullable="0" physicalName="NoOfAllMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>ฐานสมาชิกทั้งหมด (ที่มีในฐานข้อมูล)</remarks>
+    </column>
+    <column id="COL191" populated="true" UUID="11ecfde7-2bb6-4da7-b664-ca30df00afff" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfAllExpiredMember_seq" defaultValue="" name="NoOfAllExpiredMember" nullable="0" physicalName="NoOfAllExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>ยอดสมาชิกที่หมดอายุแล้วทั้งหมด 
+(คิดตั้งแต่ 2007 จนถึงไตรมาสนี้)</remarks>
+    </column>
+    <column id="COL192" populated="true" UUID="9c150fde-70c9-4b2e-b632-f95d49f6b8d5" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfAllNotExpiredMember_seq" defaultValue="" name="NoOfAllNotExpiredMember" nullable="0" physicalName="NoOfAllNotExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ไตรมาสนี้ยังไม่หมดอายุ</remarks>
+    </column>
+    <column id="COL193" populated="true" UUID="1b1f8f3c-da36-4fb2-ab77-5132f3a5d34c" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfPurchaseMember_seq" defaultValue="" name="NoOfPurchaseMember" nullable="0" physicalName="NoOfPurchaseMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมากชิกที่มาซื้อของในไตรมาสนี้</remarks>
+    </column>
+    <column id="COL194" populated="true" UUID="8733346b-5df9-4a63-897c-523944b89769" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_PurchaseAmount_seq" defaultValue="" name="PurchaseAmount" nullable="0" physicalName="PurchaseAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>ยอดซื้อของสมาชิกในไตรมาสนี้</remarks>
+    </column>
+    <column id="COL195" populated="true" UUID="1b2f84a1-47ff-4157-b923-5a015ba8a5b0" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfBill_seq" defaultValue="" name="NoOfBill" nullable="0" physicalName="NoOfBill" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนบิล</remarks>
+    </column>
+    <column id="COL196" populated="true" UUID="cda5216a-4221-417e-91f7-f5625266b435" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfPointFromLastQuarter_seq" defaultValue="" name="NoOfPointFromLastQuarter" nullable="0" physicalName="NoOfPointFromLastQuarter" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มยกมาจากไตรมาสที่แล้ว</remarks>
+    </column>
+    <column id="COL197" populated="true" UUID="ab922575-a329-42b7-9ec1-8e3a7b297784" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfNewPoint_seq" defaultValue="" name="NoOfNewPoint" nullable="0" physicalName="NoOfNewPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มที่รับเข้าในไตรมาสนี้</remarks>
+    </column>
+    <column id="COL198" populated="true" UUID="cbc14640-794d-4774-8d37-82b873c76b75" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_RemainingPoint_seq" defaultValue="" name="RemainingPoint" nullable="0" physicalName="RemainingPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มสะสมทั้งหมดของระบบ ที่คิด ณ ไตรมาสนี้</remarks>
+    </column>
+    <column id="COL199" populated="true" UUID="cb010454-cc28-471e-b65c-5637d6a16292" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfRedeemPoint_seq" defaultValue="" name="NoOfRedeemPoint" nullable="0" physicalName="NoOfRedeemPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มใช้แลกของรางวัล</remarks>
+    </column>
+    <column id="COL200" populated="true" UUID="0a8bc432-9aee-45fe-a2aa-f1a05a6bba73" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfRedeemPointForRenew_seq" defaultValue="" name="NoOfRedeemPointForRenew" nullable="0" physicalName="NoOfRedeemPointForRenew" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มที่ใช้ต่ออายุ</remarks>
+    </column>
+    <column id="COL201" populated="true" UUID="ee5a36bc-9c2b-448f-9513-35b64836ab27" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfRenewByCash_seq" defaultValue="" name="NoOfRenewByCash" nullable="0" physicalName="NoOfRenewByCash" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>รวมยอดเงินที่ลูกค้ามาต่ออายุ</remarks>
+    </column>
+    <column id="COL202" populated="true" UUID="8af6986f-97de-4065-94b8-ed260ac87f85" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfExpiredPoint_seq" defaultValue="" name="NoOfExpiredPoint" nullable="0" physicalName="NoOfExpiredPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มหมดอายุ</remarks>
+    </column>
+    <column id="COL203" populated="true" UUID="cd7c5cf3-55ce-4e73-a2fa-b984a4601f9f" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfMemberRenewByCash_seq" defaultValue="" name="NoOfMemberRenewByCash" nullable="0" physicalName="NoOfMemberRenewByCash" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ต่ออายุด้วยเงินสด</remarks>
+    </column>
+    <column id="COL204" populated="true" UUID="5f3b2f04-bf56-412e-945d-74589727a4be" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_NoOfMemberRenewByPoint_seq" defaultValue="" name="NoOfMemberRenewByPoint" nullable="0" physicalName="NoOfMemberRenewByPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ต่ออายุด้วยแต้ม</remarks>
+    </column>
+    <column id="COL205" populated="true" UUID="69786d16-57dc-4deb-a7cd-263802f6fc35" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL206" populated="true" UUID="6890f2ef-2fdc-4414-8bd1-b13acf08bba4" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberQuarterly_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1823" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1822" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1824" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX207" populated="true" UUID="046966db-7e76-42a4-98ee-71bfcd82f583" clustered="false" name="CRM_FactMemberQuarterly_pk" physicalName="crm_factmembertransquarterly_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC208" populated="true" UUID="914d4ba6-1483-4432-a515-a77d0ac01858" ascendingOrDescending="UNSPECIFIED" column-ref="COL183" name="QuarterKey" physicalName="QuarterKey" />
+     <index-column id="IDC209" populated="true" UUID="c29174c4-5bba-4c6b-9f10-3d3dab2bb572" ascendingOrDescending="UNSPECIFIED" column-ref="COL184" name="MemberTypeKey" physicalName="MemberTypeKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB210" populated="true" UUID="81f37272-41a6-454b-adb4-0bc4945c4e49" name="CRM_FactMemberYearly" objectType="TABLE" physicalName="CRM_FactMemberYearly" >
+   <remarks></remarks>
+   <folder id="FOLTAB2101" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL211" populated="true" UUID="fb491d70-df18-4bf0-af2d-fa37e755f399" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_YearKey_seq" defaultValue="" name="YearKey" nullable="0" physicalName="YearKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL212" populated="true" UUID="0d0f1a12-8ba2-443f-9f98-6f63fbb0aa1d" autoIncrement="false" autoIncrementSequenceName="CRM_DimMemberType_MemberTypeKey_seq" defaultValue="" name="MemberTypeKey" nullable="0" physicalName="MemberTypeKey" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL213" populated="true" UUID="817b6a70-12ae-4d06-9d6e-438e473a3f23" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfNewMember_seq" defaultValue="" name="NoOfNewMember" nullable="0" physicalName="NoOfNewMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกใหม่ที่เกิดขึ้นในปีนี้</remarks>
+    </column>
+    <column id="COL214" populated="true" UUID="68d1f7a0-3560-4060-b7b7-7a27bd56249b" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfRenewMember_seq" defaultValue="" name="NoOfRenewMember" nullable="0" physicalName="NoOfRenewMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่มาต่ออายุในปีนี้</remarks>
+    </column>
+    <column id="COL215" populated="true" UUID="6bda4e73-a776-4941-8d43-0e17a700f476" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfExpiredMember_seq" defaultValue="" name="NoOfExpiredMember" nullable="0" physicalName="NoOfExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่หมดอายุในปีนี้</remarks>
+    </column>
+    <column id="COL216" populated="true" UUID="2d3122d6-35c9-4f33-b299-9356e984b4b3" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfNotExpiredMember_seq" defaultValue="" name="NoOfNotExpiredMember" nullable="0" physicalName="NoOfNotExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ปีนี้ยังไม่หมดอายุ</remarks>
+    </column>
+    <column id="COL217" populated="true" UUID="aa06556e-8b57-441a-bae8-10280ddc7ca4" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfActiveMember_seq" defaultValue="" name="NoOfActiveMember" nullable="0" physicalName="NoOfActiveMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ Active ในปีนี้
+คือ ปีนี้มาซื้อของอย่างน้อย 1 ครั้ง</remarks>
+    </column>
+    <column id="COL218" populated="true" UUID="59431ab4-39a0-45fd-85c5-a48be41a39d5" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfAllMember_seq" defaultValue="" name="NoOfAllMember" nullable="0" physicalName="NoOfAllMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>ฐานสมาชิกทั้งหมด (ที่มีในฐานข้อมูล)</remarks>
+    </column>
+    <column id="COL219" populated="true" UUID="615991c0-daff-4206-a787-6d14f3fba97b" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfAllExpiredMember_seq" defaultValue="" name="NoOfAllExpiredMember" nullable="0" physicalName="NoOfAllExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>ยอดสมาชิกที่หมดอายุแล้วทั้งหมด 
+(คิดตั้งแต่ 2007 จนถึงปีนี้)</remarks>
+    </column>
+    <column id="COL220" populated="true" UUID="1f5f971f-efac-4e2a-85a2-f8a6798c4ca4" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfAllNotExpiredMember_seq" defaultValue="" name="NoOfAllNotExpiredMember" nullable="0" physicalName="NoOfAllNotExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ปีนี้ยังไม่หมดอายุ</remarks>
+    </column>
+    <column id="COL221" populated="true" UUID="77980f3b-1b03-457c-be46-a453cb8c6041" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfPurchaseMember_seq" defaultValue="" name="NoOfPurchaseMember" nullable="0" physicalName="NoOfPurchaseMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมากชิกที่มาซื้อของในปีนี้</remarks>
+    </column>
+    <column id="COL222" populated="true" UUID="1e4fa06d-1801-4f00-bb78-4977fedd8ab2" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_PurchaseAmount_seq" defaultValue="" name="PurchaseAmount" nullable="0" physicalName="PurchaseAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>ยอดซื้อของสมาชิกในปีนี้</remarks>
+    </column>
+    <column id="COL223" populated="true" UUID="5b612ddc-0a18-46fe-8d6e-309ce7766bf5" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfBill_seq" defaultValue="" name="NoOfBill" nullable="0" physicalName="NoOfBill" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนบิล</remarks>
+    </column>
+    <column id="COL224" populated="true" UUID="e942897d-2370-4743-bc08-17acac75cf02" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfPointFromLastYear_seq" defaultValue="" name="NoOfPointFromLastYear" nullable="0" physicalName="NoOfPointFromLastYear" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มยกมาจากปีที่แล้ว</remarks>
+    </column>
+    <column id="COL225" populated="true" UUID="4808983a-2529-41dd-81cc-306e7cd912d6" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfNewPoint_seq" defaultValue="" name="NoOfNewPoint" nullable="0" physicalName="NoOfNewPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มที่รับเข้าในปีนี้</remarks>
+    </column>
+    <column id="COL226" populated="true" UUID="12be116a-38c0-40f2-b8e5-157fa9571d4c" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_RemainingPoint_seq" defaultValue="" name="RemainingPoint" nullable="0" physicalName="RemainingPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มสะสมทั้งหมดของระบบ ที่คิด ณ ปีนี้</remarks>
+    </column>
+    <column id="COL227" populated="true" UUID="f65ede2b-10da-4568-91cc-c8cac07bd2fd" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfRedeemPoint_seq" defaultValue="" name="NoOfRedeemPoint" nullable="0" physicalName="NoOfRedeemPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มใช้แลกของรางวัล</remarks>
+    </column>
+    <column id="COL228" populated="true" UUID="27b93efe-9b21-45a6-91c1-06d23a92aa43" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfRedeemPointForRenew_seq" defaultValue="" name="NoOfRedeemPointForRenew" nullable="0" physicalName="NoOfRedeemPointForRenew" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มที่ใช้ต่ออายุ</remarks>
+    </column>
+    <column id="COL229" populated="true" UUID="fa64127d-1cb4-4f0b-892c-19703a4666b7" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfRenewByCash_seq" defaultValue="" name="NoOfRenewByCash" nullable="0" physicalName="NoOfRenewByCash" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>รวมยอดเงินที่ลูกค้ามาต่ออายุ</remarks>
+    </column>
+    <column id="COL230" populated="true" UUID="cca6cdb4-3ea4-4bcc-8f8c-5842e47a9ceb" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfExpiredPoint_seq" defaultValue="" name="NoOfExpiredPoint" nullable="0" physicalName="NoOfExpiredPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มหมดอายุ</remarks>
+    </column>
+    <column id="COL231" populated="true" UUID="8bda7ff1-52c8-426c-adbe-4a17fe5c4ff5" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfMemberRenewByCash_seq" defaultValue="" name="NoOfMemberRenewByCash" nullable="0" physicalName="NoOfMemberRenewByCash" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ต่ออายุด้วยเงินสด</remarks>
+    </column>
+    <column id="COL232" populated="true" UUID="713512d2-2808-409d-b1f4-3f9f0b3e2bfb" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_NoOfMemberRenewByPoint_seq" defaultValue="" name="NoOfMemberRenewByPoint" nullable="0" physicalName="NoOfMemberRenewByPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสมาชิกที่ต่ออายุด้วยแต้ม</remarks>
+    </column>
+    <column id="COL233" populated="true" UUID="230a570f-d1d9-4b74-bff5-17ef1e57c35e" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL234" populated="true" UUID="a97f6206-5ef4-48a7-ae36-b7b4051bdf67" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberYearly_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB2103" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB2102" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB2104" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX235" populated="true" UUID="da806ad7-eaa6-4e99-a7f4-fff35194087e" clustered="false" name="CRM_FactMemberYearly_pk" physicalName="crm_factmembertransyearly_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC236" populated="true" UUID="b506450a-a993-451d-a766-9d0092829658" ascendingOrDescending="UNSPECIFIED" column-ref="COL211" name="YearKey" physicalName="YearKey" />
+     <index-column id="IDC237" populated="true" UUID="b3644339-8fd9-4de5-bf5e-a102ad54161c" ascendingOrDescending="UNSPECIFIED" column-ref="COL212" name="MemberTypeKey" physicalName="MemberTypeKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB238" populated="true" UUID="71feb7a3-0a26-498d-9158-e5ea8a327f8e" name="CRM_FactMemberDaily" objectType="TABLE" physicalName="CRM_FactMemberDaily" >
+   <remarks>PDF-28</remarks>
+   <folder id="FOLTAB2381" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL239" populated="true" UUID="b8dd53b1-00ff-44cf-8960-8f7cfc93c936" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberDaily_DateKey_seq" defaultValue="" name="DateKey" nullable="0" physicalName="DateKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL240" populated="true" UUID="46c06a69-4873-4e91-898b-26507c30044f" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberDaily_TimeKey_seq" defaultValue="" name="TimeKey" nullable="0" physicalName="TimeKey" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL241" populated="true" UUID="1662f321-ad5a-4246-8b63-e4463a495b51" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberTransDaily_MemberTypeKey_seq" defaultValue="" name="MemberKey" nullable="0" physicalName="MemberKey" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL242" populated="true" UUID="7d8f7d5c-aa82-4a1d-a73f-e61ce424b946" autoIncrement="false" autoIncrementSequenceName="DimBranch_BranchKey_seq" defaultValue="" name="BranchKey" nullable="0" physicalName="BranchKey" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL243" populated="true" UUID="c9028244-cab5-4e6a-813a-ab0a4255aeb6" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberDaily_NoOfBill_seq" defaultValue="" name="NoOfBill" nullable="0" physicalName="NoOfBill" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนบิล</remarks>
+    </column>
+    <column id="COL244" populated="true" UUID="fd1a9fbf-8827-4c31-97bd-5a10813d3704" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberDaily_PurchaseAmount_seq" defaultValue="" name="PurchaseAmount" nullable="0" physicalName="PurchaseAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>ยอดซื้อ</remarks>
+    </column>
+    <column id="COL245" populated="true" UUID="5d9dd463-f48b-4e32-a9b1-9dd9bc9b341f" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberDaily_TotalPoint_seq" defaultValue="" name="TotalPoint" nullable="0" physicalName="TotalPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนแต้มสะสม</remarks>
+    </column>
+    <column id="COL246" populated="true" UUID="11b0e471-b8b7-4437-8012-2a92f25840a5" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberDaily_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL247" populated="true" UUID="19859508-e55b-4099-8d6e-559a53f647d9" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberDaily_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB2383" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB2382" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB2384" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX248" populated="true" UUID="16e2e511-f1fc-406b-9aeb-af21d2d7ffde" clustered="false" name="CRM_FactMemberDaily_pk" physicalName="crm_factmembertransdaily_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC249" populated="true" UUID="1f886c2b-76b6-4e7c-b151-16d305dee8a7" ascendingOrDescending="UNSPECIFIED" column-ref="COL239" name="DateKey" physicalName="DateKey" />
+     <index-column id="IDC250" populated="true" UUID="c6af219e-8fa4-43bd-8d7a-685f9ea9d1dd" ascendingOrDescending="UNSPECIFIED" column-ref="COL240" name="TimeKey" physicalName="TimeKey" />
+     <index-column id="IDC251" populated="true" UUID="1964b886-1e7e-42a6-92a7-6deb82eac5ed" ascendingOrDescending="UNSPECIFIED" column-ref="COL241" name="MemberKey" physicalName="MemberKey" />
+     <index-column id="IDC252" populated="true" UUID="2d0870ed-690f-4702-9955-397be77dae87" ascendingOrDescending="UNSPECIFIED" column-ref="COL242" name="BranchKey" physicalName="BranchKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB253" populated="true" UUID="ccf2a215-6c75-46f9-873a-f665dc82c9a6" name="CRM_FactProductPurchase" objectType="TABLE" physicalName="CRM_FactProductPurchase" >
+   <remarks>PDF-30
+ซื้อสินค้าผ่านบัตรสมาชิก</remarks>
+   <folder id="FOLTAB2531" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL254" populated="true" UUID="c536384c-c884-41ee-8c86-ac8e0f4b21e8" autoIncrement="false" autoIncrementSequenceName="CRM_FactProductPurchase_ProductKey_seq" defaultValue="" name="ProductKey" nullable="0" physicalName="ProductKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL255" populated="true" UUID="87baef9d-2336-41ca-a405-eb1199b85d58" autoIncrement="false" autoIncrementSequenceName="CRM_FactProductPurchase_MonthKey_seq" defaultValue="" name="MonthKey" nullable="0" physicalName="MonthKey" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL256" populated="true" UUID="a4a28db4-5ebe-432e-b2d4-2890b217a2a6" autoIncrement="false" autoIncrementSequenceName="CRM_FactProductPurchase_NoOfPurchaseMember_seq" defaultValue="" name="NoOfPurchaseMember" nullable="0" physicalName="NoOfPurchaseMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL257" populated="true" UUID="68e9ee79-aa95-472d-8260-4781c9094282" autoIncrement="false" autoIncrementSequenceName="CRM_FactProductPurchase_PurchaseAmount_seq" defaultValue="" name="PurchaseAmount" nullable="0" physicalName="PurchaseAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>ยอดซื้อของสมาชิก</remarks>
+    </column>
+    <column id="COL258" populated="true" UUID="85edd27a-9c38-45f5-bf5d-20c40bf96dd7" autoIncrement="false" autoIncrementSequenceName="CRM_FactProductPurchase_PurchaseQty_seq" defaultValue="" name="PurchaseQty" nullable="0" physicalName="PurchaseQty" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนสินค้า</remarks>
+    </column>
+    <column id="COL259" populated="true" UUID="b191fcd6-ada3-408d-95dd-de5ff1d8908d" autoIncrement="false" autoIncrementSequenceName="CRM_FactProductPurchase_NoOfBill_seq" defaultValue="" name="NoOfBill" nullable="0" physicalName="NoOfBill" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนบิล</remarks>
+    </column>
+    <column id="COL260" populated="true" UUID="08a1de74-a36d-4e36-929a-2d9320e2819f" autoIncrement="false" autoIncrementSequenceName="CRM_FactProductPurchase_TatalPoint_seq" defaultValue="" name="TotalPoint" nullable="0" physicalName="TatalPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>แต้มสะสมที่ได้รับ</remarks>
+    </column>
+    <column id="COL261" populated="true" UUID="3d2ceab2-e9be-4993-800a-40dbdfbc8da0" autoIncrement="false" autoIncrementSequenceName="CRM_FactProductPurchase_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL262" populated="true" UUID="5f4286e1-c80e-458f-b818-07ebcd23ab60" autoIncrement="false" autoIncrementSequenceName="CRM_FactProductPurchase_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB2533" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB2532" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB2534" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX263" populated="true" UUID="cfb426de-9884-4213-9aed-1e7db5f29918" clustered="false" name="CRM_FactProductPurchase_pk" physicalName="crm_factmemberproductpurchase_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC264" populated="true" UUID="a3bfe6b5-8361-484d-abfa-341d2c2b07e8" ascendingOrDescending="UNSPECIFIED" column-ref="COL254" name="ProductKey" physicalName="ProductKey" />
+     <index-column id="IDC265" populated="true" UUID="a93d8a85-a891-4384-9143-ebcd202d5b9b" ascendingOrDescending="UNSPECIFIED" column-ref="COL255" name="MonthKey" physicalName="MonthKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB266" populated="true" UUID="d5099fad-bace-47ee-afb7-ef793959320c" name="CRM_FactRedeem" objectType="TABLE" physicalName="CRM_FactRedeem" >
+   <remarks>PDF-31,33,35 37 39</remarks>
+   <folder id="FOLTAB2661" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL267" populated="true" UUID="603d22fd-34e9-464c-8f22-66e9707937cf" autoIncrement="false" autoIncrementSequenceName="CRM_FactRedeem_MonthKey_seq" defaultValue="" name="MonthKey" nullable="0" physicalName="MonthKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL268" populated="true" UUID="d52206f5-9ab5-4e74-a541-059aae29f557" autoIncrement="false" autoIncrementSequenceName="CRM_FactRedeem_RewardKey_seq" defaultValue="" name="RewardKey" nullable="0" physicalName="RewardKey" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL269" populated="true" UUID="8efb25e9-c169-4277-8ec5-8051270696e3" autoIncrement="false" autoIncrementSequenceName="CRM_FactRedeem_MemberKey_seq" defaultValue="" name="MemberKey" nullable="0" physicalName="MemberKey" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL270" populated="true" UUID="f91daccd-0b6c-42f4-ace8-b23df41edafe" autoIncrement="false" autoIncrementSequenceName="CRM_FactRedeem_BranchCode_seq" defaultValue="" name="BranchCode" nullable="0" physicalName="BranchCode" precision="10" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL271" populated="true" UUID="a04e1f43-3771-4e2e-801b-6e9c5672df89" autoIncrement="false" autoIncrementSequenceName="CRM_FactRedeem_BranchName_seq" defaultValue="" name="BranchName" nullable="0" physicalName="BranchName" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ชื่อสาขา</remarks>
+    </column>
+    <column id="COL272" populated="true" UUID="173f26b2-7534-4fd6-bd67-7993789cdd32" autoIncrement="false" autoIncrementSequenceName="CRM_FactRedeem_NoOfRedeemPoint_seq" defaultValue="" name="NoOfRedeemPoint" nullable="0" physicalName="NoOfRedeemPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนแต้มที่ใช้แลกของรางวัล</remarks>
+    </column>
+    <column id="COL273" populated="true" UUID="39092a95-58d4-424a-9fd9-6f969fe804f3" autoIncrement="false" autoIncrementSequenceName="CRM_FactRedeem_NoOfRedeemAmount_seq" defaultValue="" name="NoOfRedeemAmount" nullable="0" physicalName="NoOfRedeemAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>มูลค่าของรางวัลที่แลกไป</remarks>
+    </column>
+    <column id="COL274" populated="true" UUID="0b767d7c-c984-4490-8c53-cb243f008f88" autoIncrement="false" autoIncrementSequenceName="CRM_FactRedeem_RedeemQty_seq" defaultValue="" name="RedeemQty" nullable="0" physicalName="RedeemQty" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนของรางวัลที่ถูกแลก</remarks>
+    </column>
+    <column id="COL275" populated="true" UUID="39894add-2f12-4744-ae57-5f895d205ac5" autoIncrement="false" autoIncrementSequenceName="CRM_FactRedeem_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL276" populated="true" UUID="929fcfc7-e99f-491e-b815-445c8f33fc1e" autoIncrement="false" autoIncrementSequenceName="CRM_FactRedeem_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB2663" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB2662" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB2664" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX277" populated="true" UUID="ca4c88bf-f176-434c-b14c-f1ca618dd73f" clustered="false" name="CRM_FactRedeem_pk" physicalName="crm_factredeem_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC278" populated="true" UUID="f3367765-2c32-4c8f-87ba-631d64e477ac" ascendingOrDescending="UNSPECIFIED" column-ref="COL267" name="MonthKey" physicalName="MonthKey" />
+     <index-column id="IDC279" populated="true" UUID="1aab0c9b-df79-4330-9246-cf753d4adf1c" ascendingOrDescending="UNSPECIFIED" column-ref="COL268" name="RewardKey" physicalName="RewardKey" />
+     <index-column id="IDC280" populated="true" UUID="ec06f444-bd15-41d2-b506-bca1ab20ae03" ascendingOrDescending="UNSPECIFIED" column-ref="COL269" name="MemberKey" physicalName="MemberKey" />
+     <index-column id="IDC281" populated="true" UUID="c9b2b8bb-42a4-49cb-b878-44edfc9b0d99" ascendingOrDescending="UNSPECIFIED" column-ref="COL270" name="BranchCode" physicalName="BranchCode" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB282" populated="true" UUID="cc9395b8-4743-4a31-9fa8-dda53cf340cc" name="CRM_FactMemberProfile" objectType="TABLE" physicalName="CRM_FactMemberProfile" >
+   <remarks>PDF-43,44,45,46</remarks>
+   <folder id="FOLTAB2821" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL283" populated="true" UUID="aa6c9d68-7430-4f7a-ac07-36094e4d7a26" autoIncrement="false" autoIncrementSequenceName="DimBranch_BranchKey_seq" defaultValue="" name="BranchKey" nullable="0" physicalName="BranchKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL284" populated="true" UUID="2058c9ca-5bdf-4aa1-8cfb-61f72dba1162" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_DateKey_seq" defaultValue="" name="MonthKey" nullable="0" physicalName="MonthKey" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL285" populated="true" UUID="0a63e4b6-c789-4b44-8078-04f4922b7bd7" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_MemberTypeKey_seq" defaultValue="" name="MemberTypeKey" nullable="0" physicalName="MemberTypeKey" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL286" populated="true" UUID="375f6203-891d-46ea-b109-4d4ed53cf450" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_MemberKey_seq" defaultValue="" name="MemberKey" nullable="0" physicalName="MemberKey" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL287" populated="true" UUID="149bd82b-a00e-4b28-bd62-776a1741a80d" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_MemberAge_seq" defaultValue="" name="MemberAge" nullable="0" physicalName="MemberAge" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>อายุของ Member</remarks>
+    </column>
+    <column id="COL288" populated="true" UUID="f79f6e44-ad00-440a-a229-36d69a9c700e" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_MemberAgeRange_seq" defaultValue="" name="MemberAgeRange" nullable="0" physicalName="MemberAgeRange" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>ช่วงอายุของ Member
+(จะคำนวณว่าMemberนี้ ตกที่ช่วงอายุไหน เช่น 5-10ปี , 11-17 ปี)</remarks>
+    </column>
+    <column id="COL289" populated="true" UUID="2954d76c-f316-4e89-b5ed-03778dd25d3e" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_NoOfMember_seq" defaultValue="" name="NoOfMember" nullable="0" physicalName="NoOfMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>เป็น HeadCount จะมีค่าเป็น 1 เสมอ</remarks>
+    </column>
+    <column id="COL290" populated="true" UUID="f6d75204-a6d4-4a06-8882-8f4c2b952a6d" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_NoOfExpiredMember_seq" defaultValue="" name="NoOfExpiredMember" nullable="0" physicalName="NoOfExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>เป็น HeadCount
+ถ้าหมดอายุจะมีค่าเป็นเป็น  1 
+ถ้ายังไม่หมดอายุจะมีค่าเป็น 0</remarks>
+    </column>
+    <column id="COL291" populated="true" UUID="5cd67c0c-8792-4f45-aa3c-fbdb204b6027" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_NoOfNotExpiredMember_seq" defaultValue="" name="NoOfNotExpiredMember" nullable="0" physicalName="NoOfNotExpiredMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>เป็น HeadCount
+ถ้าหมดอายุจะมีค่าเป็นเป็น  0 
+ถ้ายังไม่หมดอายุจะมีค่าเป็น 1</remarks>
+    </column>
+    <column id="COL292" populated="true" UUID="cc6e926a-605f-43b9-92e3-a4d01776e61f" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_IsActiveThisMonth_seq" defaultValue="" name="IsActiveThisMonth" nullable="0" physicalName="IsActiveThisMonth" precision="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>สมาชิกคนนี้ได้ซื้อของเดือนนี้หรือไม่</remarks>
+    </column>
+    <column id="COL293" populated="true" UUID="009b5a05-c37c-4afc-a2c7-63c489c191bb" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL294" populated="true" UUID="9c780021-0231-4584-af6e-52c905cc5b2a" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB2823" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB2822" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB2824" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX295" populated="true" UUID="d62a1f69-dc72-4253-bb56-58710ad2d30d" clustered="false" name="CRM_FactMemberProfile_pk" physicalName="crm_factmemberprofile_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC296" populated="true" UUID="27bd2474-508c-4c6d-8dad-0710d1ad5e6a" ascendingOrDescending="UNSPECIFIED" column-ref="COL283" name="BranchKey" physicalName="BranchKey" />
+     <index-column id="IDC297" populated="true" UUID="627bb1ca-1bee-48a5-b0b6-30947251561f" ascendingOrDescending="UNSPECIFIED" column-ref="COL284" name="MonthKey" physicalName="MonthKey" />
+     <index-column id="IDC298" populated="true" UUID="5792b77a-4e1f-41d4-b276-c8d29a23d266" ascendingOrDescending="UNSPECIFIED" column-ref="COL285" name="MemberTypeKey" physicalName="MemberTypeKey" />
+     <index-column id="IDC299" populated="true" UUID="699cd459-d935-4e77-8802-96bfdc05ede6" ascendingOrDescending="UNSPECIFIED" column-ref="COL286" name="MemberKey" physicalName="MemberKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB300" populated="true" UUID="8cc6d0d8-572f-43c9-9209-dd435521f4ac" name="CRM_FactMemberRegister" objectType="TABLE" physicalName="CRM_FactMemberRegister" >
+   <remarks>UserPDF 7,9
+สรุปยอด 
+การซื้อบัตรสมาชิกของแต่ละ PLU</remarks>
+   <folder id="FOLTAB3001" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL301" populated="true" UUID="c48f1c26-0b80-47f6-9d88-e113e9c86be4" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberRegister_BranchKey_seq" defaultValue="" name="BranchKey" nullable="0" physicalName="BranchKey" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL302" populated="true" UUID="793d7a0b-e9ba-4226-aad5-8d34e75a2747" autoIncrement="false" autoIncrementSequenceName="DimDate_MonthKey_seq" defaultValue="" name="MonthKey" nullable="0" physicalName="MonthKey" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL303" populated="true" UUID="a49c0321-598e-4ae8-88ce-bf6e3386bf2c" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberRegister_RegisterTypeKey_seq" defaultValue="" name="RegisterTypeKey" nullable="0" physicalName="RegisterTypeKey" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL304" populated="true" UUID="d3ee0382-304e-4aa6-841a-f13187166e4c" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberRegister_NoOfIssuedCard_seq" defaultValue="" name="NoOfIssuedCard " nullable="0" physicalName="NoOfIssuedCard" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนบัตรสมาชิกที่ขายของแต่ละประเภท</remarks>
+    </column>
+    <column id="COL305" populated="true" UUID="ecb865d9-068f-4ef6-b29f-f2a8ebf5bbc9" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberRegister_SaleCardAmount_seq" defaultValue="" name="SaleCardAmount " nullable="0" physicalName="SaleCardAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>ยอดขายที่ขายบัตรได้</remarks>
+    </column>
+    <column id="COL306" populated="true" UUID="32e7dc68-b79d-4675-b930-f29429330463" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberRegister_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL307" populated="true" UUID="6b23a662-870a-42fa-b2ec-d0103b646475" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberRegister_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB3003" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB3002" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB3004" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX308" populated="true" UUID="4f464bc4-9461-43a0-9f2b-1ff865fa9171" clustered="false" name="CRM_FactMemberRegister" physicalName="crm_factmemberregister" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC309" populated="true" UUID="13db49ef-cc83-4fb6-8c85-b831d914339d" ascendingOrDescending="UNSPECIFIED" column-ref="COL301" name="BranchKey" physicalName="BranchKey" />
+     <index-column id="IDC310" populated="true" UUID="27fbfc71-2cf4-496d-b45c-5af6c5b1846a" ascendingOrDescending="UNSPECIFIED" column-ref="COL302" name="MonthKey" physicalName="MonthKey" />
+     <index-column id="IDC311" populated="true" UUID="f2e07753-0323-4efd-9c58-a1c8228c66b6" ascendingOrDescending="UNSPECIFIED" column-ref="COL303" name="RegisterTypeKey" physicalName="RegisterTypeKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB312" populated="true" UUID="b583c9db-d8d0-48d2-a161-941c49ab9095" name="CRM_FactBranchPurchase" objectType="TABLE" physicalName="CRM_FactBranchPurchase" >
+   <remarks>PDF-29
+as of
+ถ้าอยากให้ sum up month qtr year ได้ให้เพิ่ม memberkey แล้วเอา NoOfNotExpiredMember ออก</remarks>
+   <folder id="FOLTAB3121" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL313" populated="true" UUID="e5417884-64fb-4537-9816-caa397e87b45" autoIncrement="false" autoIncrementSequenceName="CRM_FactBranchPurchase_BranchKey_seq" defaultValue="" name="BranchKey" nullable="0" physicalName="BranchKey" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL314" populated="true" UUID="ee79fe46-2b2b-4456-93ea-3386c3483338" autoIncrement="false" autoIncrementSequenceName="DimDate_MonthKey_seq" defaultValue="" name="MonthKey" nullable="0" physicalName="MonthKey" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL315" populated="true" UUID="9ff4018b-151a-4199-9f39-3814f4040d4a" autoIncrement="false" autoIncrementSequenceName="CRM_FactBranchPurchase_NoOfPurchaseMember_seq" defaultValue="" name="NoOfPurchaseMember" nullable="0" physicalName="NoOfPurchaseMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนลูกค้าที่มาซื้อ (Distinct MemberCode ซ้ำนับ1)</remarks>
+    </column>
+    <column id="COL316" populated="true" UUID="efa0d3bb-0f0b-41a2-9d5a-76dc7f7d709f" autoIncrement="false" autoIncrementSequenceName="CRM_FactBranchPurchase_PurchaseAmount_seq" defaultValue="" name="PurchaseAmount" nullable="0" physicalName="PurchaseAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>ยอดซื้อ</remarks>
+    </column>
+    <column id="COL317" populated="true" UUID="9d1885c5-1d71-4259-b058-666b7578616c" autoIncrement="false" autoIncrementSequenceName="CRM_FactBranchPurchase_NoOfBill_seq" defaultValue="" name="NoOfBill" nullable="0" physicalName="NoOfBill" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนบิล</remarks>
+    </column>
+    <column id="COL318" populated="true" UUID="9cc9d6f8-8294-410b-a2ab-bffcac854e53" autoIncrement="false" autoIncrementSequenceName="CRM_FactBranchPurchase_TotalPoint_seq" defaultValue="" name="TotalPoint" nullable="0" physicalName="TotalPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>จำนวนแต้มสะสม</remarks>
+    </column>
+    <column id="COL319" populated="true" UUID="2942a316-57ab-48d6-a36c-b3285b7ec2d9" autoIncrement="false" autoIncrementSequenceName="CRM_FactBranchPurchase_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL320" populated="true" UUID="c32b1a94-8095-4adf-aeeb-541abf8e4aa8" autoIncrement="false" autoIncrementSequenceName="CRM_FactBranchPurchase_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB3123" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB3122" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB3124" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX321" populated="true" UUID="6038dc82-5dd2-49a4-a8ad-2a7f2358eb42" clustered="false" name="CRM_FactBranchPurchase_pk" physicalName="crm_factbranchpurchase_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC322" populated="true" UUID="757c8fa1-a507-4198-99c8-aa4c9ee4c10c" ascendingOrDescending="UNSPECIFIED" column-ref="COL313" name="BranchKey" physicalName="BranchKey" />
+     <index-column id="IDC323" populated="true" UUID="38418307-d330-4236-b535-f56cba058f62" ascendingOrDescending="UNSPECIFIED" column-ref="COL314" name="MonthKey" physicalName="MonthKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB324" populated="true" UUID="fc8a166a-6148-4687-ba8f-cf291578c564" name="CRM_NonMemberSaleAmountMonthly" objectType="TABLE" physicalName="CRM_NonMemberSaleAmountMonthly" >
+   <remarks>เก็บยอดขายขอลูกค้าที่ไม่เป็นสมาชิก
+(เก็บยอดลูกค้าที่เป็นสมาชิกด้วยเพื่อเก็บไว้ Check) และยอดรวม
+
+จาก POS</remarks>
+   <folder id="FOLTAB3241" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL325" populated="true" UUID="861f0445-5b9c-4c28-a047-9bbb406f6779" autoIncrement="false" autoIncrementSequenceName="DimDate_MonthKey_seq" defaultValue="" name="MonthKey" nullable="0" physicalName="MonthKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL326" populated="true" UUID="e61ba724-448d-4079-9fc9-524e08e46fb2" autoIncrement="false" autoIncrementSequenceName="CRM_NonMemberSaleAmountMonthly_NonMemberSaleAmount_seq" defaultValue="" name="NonMemberSaleAmount" nullable="0" physicalName="NonMemberSaleAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>ยอดขายรายเดือนของลูกค้าที่ไม่เป็นสมาชิก
+ดึงจาก myborsys.Billno 
+ที่ MemberCode เป็นค่าว่างหรือNull
+ไม่เอาบิลที่ voidหรือยกเลิก
+
+จำแนกเป็น MonthKey ด้วย s_date
+
+Query:
+SELECT SUM(B_NetTotal) FROM s_billno sb
+WHERE sb.B_Void != &apos;V&apos;
+AND (B_MemCode = &apos;&apos; OR B_MemCode is  null )</remarks>
+    </column>
+    <column id="COL327" populated="true" UUID="0f3e69f5-4867-4cd5-af91-70743750cff4" autoIncrement="false" autoIncrementSequenceName="CRM_NonMemberSaleAmountMonthly_MemberSaleAmount_seq" defaultValue="" name="MemberSaleAmount" nullable="0" physicalName="MemberSaleAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>ยอดขายรายเดือนของลูกค้าที่เป็นสมาชิก
+ดึงจาก myborsys.Billno
+ที่ MemberCode มีรหัสสมาชิก (ไม่เป็นค่าว่าง)
+ไม่เอาบิลที่ voidหรือยกเลิก
+
+จำแนกเป็น MonthKey ด้วย s_date
+
+Query:
+SELECT SUM(B_NetTotal) FROM s_billno sb
+WHERE sb.B_Void != &apos;V&apos;
+AND (B_MemCode != &apos;&apos; OR B_MemCode is not null )</remarks>
+    </column>
+    <column id="COL328" populated="true" UUID="5eb339c6-a9e4-4170-af3e-764c5aee032c" autoIncrement="false" autoIncrementSequenceName="CRM_NonMemberSaleAmountMonthly_TotalSaleAmount_seq" defaultValue="" name="TotalSaleAmount" nullable="0" physicalName="TotalSaleAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks>ยอดขายรายเดือนทั้งหมดใน myborsys.Billno
+ไม่เอาบิลที่ voidหรือยกเลิก
+หมายเหตุ คิดจาก Billno ใหม่
+โดยไม่เอา ยอดNonMember + ยอดMember
+
+จำแนกเป็น MonthKey ด้วย s_date
+
+SELECT SUM(B_NetTotal) FROM s_billno sb
+WHERE sb.B_Void != &apos;V&apos;</remarks>
+    </column>
+    <column id="COL329" populated="true" UUID="e714ff4b-1681-488b-b6eb-d50550c9d89a" autoIncrement="false" autoIncrementSequenceName="CRM_NonMemberSaleAmountMonthly_NoOfNonMemberBill_seq" defaultValue="" name="NoOfNonMemberBill" nullable="0" physicalName="NoOfNonMemberBill" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Count(B_Refno) จาก myborsys.s_billno
+
+จำแนกเป็น MonthKey ด้วย s_date
+
+Query:
+SELECT count(1) FROM s_billno sb
+WHERE sb.B_Void != &apos;V&apos;
+AND (B_MemCode = &apos;&apos; OR B_MemCode is  null )</remarks>
+    </column>
+    <column id="COL330" populated="true" UUID="9bc948eb-d12f-4166-a0d3-d28229ce2a63" autoIncrement="false" autoIncrementSequenceName="CRM_NonMemberSaleAmountMonthly_NoOfMemberBill_seq" defaultValue="" name="NoOfMemberBill" nullable="0" physicalName="NoOfMemberBill" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Count(B_Refno) จาก myborsys.s_billno
+
+จำแนกเป็น MonthKey ด้วย s_date
+
+Query:
+SELECT count(1) FROM s_billno sb
+WHERE sb.B_Void != &apos;V&apos;
+AND (B_MemCode != &apos;&apos; OR B_MemCode is not  null )</remarks>
+    </column>
+    <column id="COL331" populated="true" UUID="054b2b17-bd29-43dc-a36a-654c056a3554" autoIncrement="false" autoIncrementSequenceName="CRM_NonMemberSaleAmountMonthly_NoOfTotalBill_seq" defaultValue="" name="NoOfTotalBill" nullable="0" physicalName="NoOfTotalBill" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Count(B_Refno) จาก myborsys.s_billno
+
+จำแนกเป็น MonthKey ด้วย s_date
+
+Query:
+SELECT count(1) FROM s_billno sb
+WHERE sb.B_Void != &apos;V&apos;</remarks>
+    </column>
+    <column id="COL332" populated="true" UUID="94682c41-f850-4e6f-acf2-c4805e7394ef" autoIncrement="false" autoIncrementSequenceName="CRM_NonMemberSaleAmountMonthly_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL333" populated="true" UUID="f106fcd0-0f8c-4012-ba50-02268126759d" autoIncrement="false" autoIncrementSequenceName="CRM_NonMemberSaleAmountMonthly_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB3243" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB3242" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB3244" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX334" populated="true" UUID="34d5c331-bcfd-4189-9fc8-3bb58e0bdb84" clustered="false" name="CRM_NonMemberSaleAmountMonthly_pk" physicalName="CRM_NonMemberSaleAmountMonthly_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC335" populated="true" UUID="d00eec65-cc39-4944-924c-6ba2adab9aed" ascendingOrDescending="UNSPECIFIED" column-ref="COL325" name="MonthKey" physicalName="MonthKey" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB336" populated="true" UUID="60e102e2-7159-454d-8cb1-744915f43e4a" name="CRM_FactMemberProductPurchase" objectType="TABLE" physicalName="CRM_FactMemberProductPurchase" >
+   <remarks></remarks>
+   <folder id="FOLTAB3361" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL337" populated="true" UUID="07d3d8c2-9feb-40cb-a39a-8df208ddce49" autoIncrement="false" autoIncrementSequenceName="DimBranch_BranchKey_seq" defaultValue="" name="BranchKey" nullable="0" physicalName="BranchKey" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL338" populated="true" UUID="583c7ef4-3488-4901-a6a4-43f53f1a9970" autoIncrement="false" autoIncrementSequenceName="DimProduct_ProductKey_seq" defaultValue="" name="ProductKey" nullable="0" physicalName="ProductKey" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL339" populated="true" UUID="c5fcf978-e856-4966-92f7-3c952749f8c7" autoIncrement="false" autoIncrementSequenceName="CRM_DimMember_MemberKey_seq" defaultValue="" name="MemberKey" nullable="0" physicalName="MemberKey" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL340" populated="true" UUID="5ba661f7-e229-4d9e-9d50-195d30bc77cb" autoIncrement="false" autoIncrementSequenceName="DimDate_MonthKey_seq" defaultValue="" name="MonthKey" nullable="0" physicalName="MonthKey" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL341" populated="true" UUID="d76b6f99-e75c-4e9c-9b4d-641429a5d72c" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProductPurchase_NoOfPurchaseMember_seq" defaultValue="" name="NoOfPurchaseMember" nullable="0" physicalName="NoOfPurchaseMember" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL342" populated="true" UUID="81f804aa-94cd-4c87-9bd2-b480ee163327" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProductPurchase_NoOfBill_seq" defaultValue="" name="NoOfBill" nullable="0" physicalName="NoOfBill" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL343" populated="true" UUID="be6f9d72-1169-4416-97e7-f88dd1fef9ee" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProductPurchase_PurchaseQty_seq" defaultValue="" name="PurchaseQty" nullable="0" physicalName="PurchaseQty" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL344" populated="true" UUID="7cba5f54-74b5-43b8-bd74-ba2e269c67fb" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProductPurchase_PurchaseAmount_seq" defaultValue="" name="PurchaseAmount" nullable="0" physicalName="PurchaseAmount" precision="15" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks></remarks>
+    </column>
+    <column id="COL345" populated="true" UUID="002c4dd7-ea61-4ffa-8d86-901403ec502b" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProductPurchase_TotalPoint_seq" defaultValue="" name="TotalPoint" nullable="0" physicalName="TotalPoint" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL346" populated="true" UUID="e0966ed0-f9ae-4288-82b7-ead38967aafb" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_CreatedDT_seq" defaultValue="" name="CreatedDT" nullable="0" physicalName="CreatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL347" populated="true" UUID="c757da80-965b-46cf-9aec-64db29849820" autoIncrement="false" autoIncrementSequenceName="CRM_FactMemberProfile_UpdatedDT_seq" defaultValue="" name="UpdatedDT" nullable="0" physicalName="UpdatedDT" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB3363" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB3362" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB3364" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX348" populated="true" UUID="29da7792-887b-41f9-8d00-13e0d651fee0" clustered="false" name="CRM_FactMemberProductPurchase_pk" physicalName="CRM_FactMemberProductPurchase_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC349" populated="true" UUID="707d1c5a-8896-4e54-9449-86a58f9bc467" ascendingOrDescending="UNSPECIFIED" column-ref="COL337" name="BranchKey" physicalName="BranchKey" />
+     <index-column id="IDC350" populated="true" UUID="8363bdb9-3050-435f-8a89-982c2a95990d" ascendingOrDescending="UNSPECIFIED" column-ref="COL338" name="ProductKey" physicalName="ProductKey" />
+     <index-column id="IDC351" populated="true" UUID="3adf989b-0221-4a9a-bf20-67e52333b069" ascendingOrDescending="UNSPECIFIED" column-ref="COL339" name="MemberKey" physicalName="MemberKey" />
+     <index-column id="IDC352" populated="true" UUID="42e9edf5-1797-4c15-8ebd-893212d70abe" ascendingOrDescending="UNSPECIFIED" column-ref="COL340" name="MonthKey" physicalName="MonthKey" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL353" populated="true" UUID="daa6a9b1-dedc-4793-b66b-35a743a44d2c" deferrability="7" deleteRule="3" fk-table-ref="TAB145" fkCardinality="7" identifying="true" name="DimDate_FactMember_fk" physicalName="DimDate_FactMember_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP354" populated="true" UUID="71eb2864-a39a-4dde-b930-c062f6cf8ac3" fk-column-ref="COL146" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL355" populated="true" UUID="02515640-fcb8-418b-aae7-67eb86cdb7aa" deferrability="7" deleteRule="3" fk-table-ref="TAB182" fkCardinality="7" identifying="true" name="DimDate_FactActiveMemberMonthly_fk" physicalName="DimDate_FactActiveMemberMonthly_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP356" populated="true" UUID="2adbc69c-93a9-460c-8e48-ef7faf1c1869" fk-column-ref="COL183" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL357" populated="true" UUID="a9194a2c-f9e7-43d8-9274-f11f79388a08" deferrability="7" deleteRule="3" fk-table-ref="TAB210" fkCardinality="7" identifying="true" name="DimDate_FactActiveMemberYearly_fk" physicalName="DimDate_FactActiveMemberYearly_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP358" populated="true" UUID="fb479e97-58df-4f70-9454-882bf6be5ccd" fk-column-ref="COL211" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL359" populated="true" UUID="c4a9dae1-6410-48cc-bb22-c71376933674" deferrability="7" deleteRule="3" fk-table-ref="TAB238" fkCardinality="7" identifying="true" name="DimDate_FactMemberTransdaily_fk" physicalName="DimDate_FactMemberTransdaily_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP360" populated="true" UUID="5088da33-d3d8-4f8d-89f0-9a3c6b04faa6" fk-column-ref="COL239" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL361" populated="true" UUID="8fba5287-983f-4e1d-a1b3-2a40a848e165" deferrability="7" deleteRule="3" fk-table-ref="TAB253" fkCardinality="7" identifying="true" name="DimDate_FactMemberProductPurchase_fk" physicalName="DimDate_FactMemberProductPurchase_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP362" populated="true" UUID="dbfb3352-e16a-4c26-8418-b0b19c3a4aca" fk-column-ref="COL255" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL363" populated="true" UUID="5ad1b340-88df-4282-8b45-1c74f8c05d31" deferrability="7" deleteRule="3" fk-table-ref="TAB282" fkCardinality="7" identifying="true" name="DimDate_FactMemberProfile_fk" physicalName="DimDate_FactMemberProfile_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP364" populated="true" UUID="f7002124-2e14-47ef-b95e-e87c6035f299" fk-column-ref="COL284" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL365" populated="true" UUID="d0a31e06-8fd4-4031-8111-02512471c109" deferrability="7" deleteRule="3" fk-table-ref="TAB266" fkCardinality="7" identifying="true" name="DimDate_FactRedeem_fk" physicalName="DimDate_FactRedeem_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP366" populated="true" UUID="1a392a45-ca48-4a43-99b7-f5c67fe6bcd3" fk-column-ref="COL267" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL367" populated="true" UUID="0fae45a7-706c-4c49-b665-23c5cdf213fa" deferrability="7" deleteRule="3" fk-table-ref="TAB312" fkCardinality="7" identifying="true" name="DimDate_CRM_FactBranchPurchase_fk" physicalName="DimDate_CRM_FactBranchPurchase_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP368" populated="true" UUID="79875b2c-e8f1-4d1c-8e63-3b0ef817d51c" fk-column-ref="COL314" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL369" populated="true" UUID="d603bb3e-bbee-47b0-8369-b44b0dd81469" deferrability="7" deleteRule="3" fk-table-ref="TAB300" fkCardinality="7" identifying="true" name="DimDate_CRM_FactMemberRegister_fk" physicalName="DimDate_CRM_FactMemberRegister_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP370" populated="true" UUID="08b7c568-1812-4632-9386-3b4c3cf1e1ab" fk-column-ref="COL302" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL371" populated="true" UUID="8d52b9b5-e50a-4920-9d7f-57dcea456bb0" deferrability="7" deleteRule="3" fk-table-ref="TAB336" fkCardinality="7" identifying="true" name="DimDate_CRM_FactMemberProductPurchase_fk" physicalName="DimDate_CRM_FactMemberProductPurchase_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP372" populated="true" UUID="00595871-9daf-4480-886f-04944073ed1f" fk-column-ref="COL340" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL373" populated="true" UUID="c78c643f-c99f-4afe-bc23-327cf5be1f61" deferrability="7" deleteRule="3" fk-table-ref="TAB324" fkCardinality="7" identifying="true" name="DimDate_CRM_NonMemberSaleAmountMonthly_fk" physicalName="DimDate_CRM_NonMemberSaleAmountMonthly_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP374" populated="true" UUID="25b64fdf-bb9e-4cda-854e-a4f2a5366e25" fk-column-ref="COL325" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL375" populated="true" UUID="6d1bd44d-127f-4e30-9171-b0eb1041676b" deferrability="7" deleteRule="3" fk-table-ref="TAB238" fkCardinality="7" identifying="true" name="DimBranch_FactMemberTransdaily_fk" physicalName="DimBranch_FactMemberTransdaily_fk" pk-table-ref="TAB44" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP376" populated="true" UUID="45964687-5293-4b72-9522-bf357506b0a8" fk-column-ref="COL242" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL45" />
+   </relationship>
+   <relationship id="REL377" populated="true" UUID="46c64b9e-5806-42e8-8654-5ac074af7fe1" deferrability="7" deleteRule="3" fk-table-ref="TAB300" fkCardinality="7" identifying="true" name="DimBranch_CRM_FactMemberRegister_fk" physicalName="DimBranch_CRM_FactMemberRegister_fk" pk-table-ref="TAB44" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP378" populated="true" UUID="206a03c9-a95d-495c-86a6-af8b955998bc" fk-column-ref="COL301" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL45" />
+   </relationship>
+   <relationship id="REL379" populated="true" UUID="97381373-3bf9-457a-939c-c8aa19d3ab64" deferrability="7" deleteRule="3" fk-table-ref="TAB312" fkCardinality="7" identifying="true" name="DimBranch_FactMemberPurchase_fk" physicalName="DimBranch_FactMemberPurchase_fk" pk-table-ref="TAB44" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP380" populated="true" UUID="274d78d6-b865-4826-8db0-b903ff055273" fk-column-ref="COL313" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL45" />
+   </relationship>
+   <relationship id="REL381" populated="true" UUID="74f9b756-ef6f-498a-bf83-48c5ffe2fc8d" deferrability="7" deleteRule="3" fk-table-ref="TAB336" fkCardinality="7" identifying="true" name="DimBranch_CRM_FactMemberProductPurchase_fk" physicalName="DimBranch_CRM_FactMemberProductPurchase_fk" pk-table-ref="TAB44" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP382" populated="true" UUID="d474be88-fb1b-474f-a477-451473dcfaf9" fk-column-ref="COL337" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL45" />
+   </relationship>
+   <relationship id="REL383" populated="true" UUID="8a2eec33-646f-400d-a9a3-6a1ef28e4e04" deferrability="7" deleteRule="3" fk-table-ref="TAB282" fkCardinality="7" identifying="true" name="DimBranch_CRM_FactMemberProfile_fk" physicalName="DimBranch_CRM_FactMemberProfile_fk" pk-table-ref="TAB44" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP384" populated="true" UUID="9602571a-1fe7-4d1d-ba24-79191408d257" fk-column-ref="COL283" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL45" />
+   </relationship>
+   <relationship id="REL385" populated="true" UUID="306c3c6b-fc19-46f0-8973-15dda20aa080" deferrability="7" deleteRule="3" fk-table-ref="TAB253" fkCardinality="7" identifying="true" name="DimProduct_FactMemberProductPurchase_fk" physicalName="DimProduct_FactMemberProductPurchase_fk" pk-table-ref="TAB75" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP386" populated="true" UUID="cfdf6f73-32a4-476e-84ba-775739c1dec7" fk-column-ref="COL254" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL76" />
+   </relationship>
+   <relationship id="REL387" populated="true" UUID="06f0cde7-b373-4e9b-a4b9-e5394de4941f" deferrability="7" deleteRule="3" fk-table-ref="TAB336" fkCardinality="7" identifying="true" name="DimProduct_CRM_FactMemberProductPurchase_fk" physicalName="DimProduct_CRM_FactMemberProductPurchase_fk" pk-table-ref="TAB75" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP388" populated="true" UUID="e0121be6-b007-4abe-9ff2-bab3b0ea2260" fk-column-ref="COL338" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL76" />
+   </relationship>
+   <relationship id="REL389" populated="true" UUID="ead0055e-db14-48ba-b7b5-d9ac521e12f1" deferrability="7" deleteRule="3" fk-table-ref="TAB238" fkCardinality="7" identifying="true" name="DimTime_FactMemberTransdaily_fk" physicalName="DimTime_FactMemberTransdaily_fk" pk-table-ref="TAB99" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP390" populated="true" UUID="8e9855fe-5a41-4dfb-b6e5-54033ae0d727" fk-column-ref="COL240" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL100" />
+   </relationship>
+   <relationship id="REL391" populated="true" UUID="a4dd6d93-c4e0-4b5b-8b6d-d4156876b4e6" deferrability="7" deleteRule="3" fk-table-ref="TAB238" fkCardinality="7" identifying="true" name="DimMemberType_FactMemberTransdaily_fk" physicalName="DimMemberType_FactMemberTransdaily_fk" pk-table-ref="TAB109" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP392" populated="true" UUID="9fbb9d45-c2cb-45c0-ae20-c4714598fe03" fk-column-ref="COL241" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL110" />
+   </relationship>
+   <relationship id="REL393" populated="true" UUID="58d9c198-5b0b-4724-8f19-ee528777209b" deferrability="7" deleteRule="3" fk-table-ref="TAB282" fkCardinality="7" identifying="true" name="DimMemberType_FactMemberProfile_fk" physicalName="DimMemberType_FactMemberProfile_fk" pk-table-ref="TAB109" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP394" populated="true" UUID="c02296d5-ba5f-4f82-beb1-81a4b148af73" fk-column-ref="COL285" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL110" />
+   </relationship>
+   <relationship id="REL395" populated="true" UUID="521e4bba-7d24-4876-a744-5ff5c1896944" deferrability="7" deleteRule="3" fk-table-ref="TAB145" fkCardinality="7" identifying="true" name="CRM_DimMemberType_CRM_FactMemberMonthly_fk" physicalName="CRM_DimMemberType_CRM_FactMemberMonthly_fk" pk-table-ref="TAB109" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP396" populated="true" UUID="5f1fb70a-bf58-402d-93c0-869c116fb906" fk-column-ref="COL147" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL110" />
+   </relationship>
+   <relationship id="REL397" populated="true" UUID="eb32e839-e3d5-4b19-b85d-05767c3b5340" deferrability="7" deleteRule="3" fk-table-ref="TAB182" fkCardinality="7" identifying="true" name="CRM_DimMemberType_CRM_FactMemberQuarterly_fk" physicalName="CRM_DimMemberType_CRM_FactMemberQuarterly_fk" pk-table-ref="TAB109" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP398" populated="true" UUID="ee493db3-4286-4ace-8e06-a9ae20cf4c4a" fk-column-ref="COL184" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL110" />
+   </relationship>
+   <relationship id="REL399" populated="true" UUID="5cd45df3-313d-486d-afbd-8673934c3feb" deferrability="7" deleteRule="3" fk-table-ref="TAB210" fkCardinality="7" identifying="true" name="CRM_DimMemberType_CRM_FactMemberYearly_fk" physicalName="CRM_DimMemberType_CRM_FactMemberYearly_fk" pk-table-ref="TAB109" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP400" populated="true" UUID="9d80e6f5-f880-4a2f-bf15-49a75571da31" fk-column-ref="COL212" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL110" />
+   </relationship>
+   <relationship id="REL401" populated="true" UUID="e01ffd63-8894-4a37-9732-bcc49069e831" deferrability="7" deleteRule="3" fk-table-ref="TAB266" fkCardinality="7" identifying="true" name="DimReward_FactRedeem_fk" physicalName="DimReward_FactRedeem_fk" pk-table-ref="TAB117" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP402" populated="true" UUID="d89b2060-c381-48ce-9162-1286054a09be" fk-column-ref="COL268" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL118" />
+   </relationship>
+   <relationship id="REL403" populated="true" UUID="7a8348be-e118-4270-82e3-e0f1ac98ba80" deferrability="7" deleteRule="3" fk-table-ref="TAB282" fkCardinality="7" identifying="true" name="DimMember_FactMemberProfile_fk" physicalName="DimMember_FactMemberProfile_fk" pk-table-ref="TAB128" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP404" populated="true" UUID="31e4b248-2c2a-4376-8308-101d5aa609cb" fk-column-ref="COL286" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL129" />
+   </relationship>
+   <relationship id="REL405" populated="true" UUID="f7cdf71a-708d-477b-a437-37d2bfeb7692" deferrability="7" deleteRule="3" fk-table-ref="TAB238" fkCardinality="7" identifying="true" name="CRM_DimMember_CRM_FactMemberTransDaily_fk" physicalName="CRM_DimMember_CRM_FactMemberTransDaily_fk" pk-table-ref="TAB128" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP406" populated="true" UUID="228e5ff7-c8fc-4f3c-8fd4-019d37a8714a" fk-column-ref="COL241" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL129" />
+   </relationship>
+   <relationship id="REL407" populated="true" UUID="23bbe3f8-fd28-4ed3-9f9d-f89035190115" deferrability="7" deleteRule="3" fk-table-ref="TAB266" fkCardinality="7" identifying="true" name="CRM_DimMember_CRM_FactRedeem_fk" physicalName="CRM_DimMember_CRM_FactRedeem_fk" pk-table-ref="TAB128" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP408" populated="true" UUID="e075ba64-16d4-4bd9-becb-6814e41c62ba" fk-column-ref="COL269" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL129" />
+   </relationship>
+   <relationship id="REL409" populated="true" UUID="e1c69195-55c8-47e5-81df-bb8d849c895a" deferrability="7" deleteRule="3" fk-table-ref="TAB336" fkCardinality="7" identifying="true" name="CRM_DimMember_CRM_FactMemberProductPurchase_fk" physicalName="CRM_DimMember_CRM_FactMemberProductPurchase_fk" pk-table-ref="TAB128" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP410" populated="true" UUID="67fdeef4-2e9c-42e8-a937-03d2a4e4dda5" fk-column-ref="COL339" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL129" />
+   </relationship>
+   <relationship id="REL411" populated="true" UUID="ebaeee96-fda3-4022-b45f-e3b2b4b394cc" deferrability="7" deleteRule="3" fk-table-ref="TAB300" fkCardinality="7" identifying="true" name="CRM_DimRegisterType_CRM_FactMemberRegister_fk" physicalName="CRM_DimRegisterType_CRM_FactMemberRegister_fk" pk-table-ref="TAB173" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP412" populated="true" UUID="6e842cbb-bf44-4fba-bd75-d58c3e80d42a" fk-column-ref="COL303" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL174" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.MySqlDDLGenerator" allow-connection="true" target-catalog="snp_dwh"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="0.8408964152537174" viewportX="0" viewportY="263" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB22" x="865" y="65" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB44" x="365" y="31" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB75" x="1489" y="277" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB99" x="75" y="529" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB109" x="635" y="85" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB117" x="391" y="919" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB128" x="611" y="781" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB145" x="1260" y="221" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB173" x="75" y="373" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB182" x="1027" y="239" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB210" x="795" y="443" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB238" x="161" y="690" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB253" x="1417" y="59" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB266" x="385" y="695" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB282" x="589" y="479" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB300" x="395" y="557" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB312" x="549" y="249" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB324" x="1066" y="891" bgColor="0xc8b7ea" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB336" x="1199" y="686" bgColor="0xf6bcbc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL353" pkConnection="1.0" fkConnection="0.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL355" pkConnection="1.0" fkConnection="0.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL357" pkConnection="0.4" fkConnection="0.6683937823834197" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL359" pkConnection="0.9694915254237289" fkConnection="0.45930232558139533" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="130"/>
+  <table-link relationship-ref="REL389" pkConnection="0.8493150684931506" fkConnection="0.15384615384615385" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL391" pkConnection="0.5642458100558659" fkConnection="0.5872093023255814" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL375" pkConnection="0.45368171021377673" fkConnection="0.75" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="130"/>
+  <table-link relationship-ref="REL385" pkConnection="0.2783018867924528" fkConnection="0.6208791208791209" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL361" pkConnection="0.1423728813559322" fkConnection="0.3032258064516129" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL365" pkConnection="0.0" fkConnection="0.9481865284974094" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="130"/>
+  <table-link relationship-ref="REL401" pkConnection="0.5287356321839081" fkConnection="0.46078431372549017" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL363" pkConnection="0.0" fkConnection="1.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL393" pkConnection="0.7597765363128491" fkConnection="0.24725274725274726" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL403" pkConnection="0.7486033519553073" fkConnection="0.2802197802197802" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL411" pkConnection="0.8055555555555556" fkConnection="0.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="36"/>
+  <table-link relationship-ref="REL377" pkConnection="0.627906976744186" fkConnection="0.4635416666666667" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL405" pkConnection="0.5511111111111111" fkConnection="0.21893491124260356" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="66"/>
+  <table-link relationship-ref="REL407" pkConnection="0.0" fkConnection="1.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL379" pkConnection="1.0" fkConnection="0.07142857142857142" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="65"/>
+  <table-link relationship-ref="REL395" pkConnection="0.41414141414141414" fkConnection="0.19689119170984457" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="129"/>
+  <table-link relationship-ref="REL397" pkConnection="1.0" fkConnection="0.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL399" pkConnection="0.9832402234636871" fkConnection="0.08808290155440414" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL367" pkConnection="0.7898305084745763" fkConnection="0.3404255319148936" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL369" pkConnection="0.0" fkConnection="1.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL381" pkConnection="0.8954869358669834" fkConnection="0.3672316384180791" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="129"/>
+  <table-link relationship-ref="REL409" pkConnection="0.8133333333333334" fkConnection="0.7704918032786885" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL387" pkConnection="0.0" fkConnection="0.1347517730496454" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="20"/>
+  <table-link relationship-ref="REL383" pkConnection="0.7300613496932515" fkConnection="0.2436548223350254" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="36"/>
+  <table-link relationship-ref="REL371" pkConnection="0.9536423841059603" fkConnection="0.0" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="36"/>
+  <table-link relationship-ref="REL373" pkConnection="0.7880794701986755" fkConnection="0.3767441860465116" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+   <olap-session id="0" db-ref="ppdb">
+    <Schema id="1" name="New OLAP Schema"/>
+   </olap-session>
+  </olap>
+  <olap-gui>
+   <olap-edit-session osession-ref="0">
+    <play-pen zoom="1.0" viewportX="0" viewportY="0">
+    </play-pen>
+   </olap-edit-session>
+  </olap-gui>
+</architect-project>
